@@ -81,6 +81,13 @@ body footer nav ul li i {
   margin: auto;
   color: white;
   text-decoration: none;
+  font-size: 1.25rem;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/merda\/OneDrive\/Ambiente\%20de\%20Trabalho\/Design\%20de\%20Meios\%20Interativos\/Sight-Seaing\/css\/styles\.scss}line{font-family:\0000384}}
+body footer nav ul li i p {
+  font-size: 1rem;
+  line-height: 15px;
+  margin-top: 5px;
 }
 
 /*# sourceMappingURL=styles.css.map */
