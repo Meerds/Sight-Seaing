@@ -20,25 +20,26 @@ a, i, p {
 /* PAGE SPECIFIC */
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/merda\/OneDrive\/Ambiente\%20de\%20Trabalho\/Design\%20de\%20Meios\%20Interativos\/Sight-Seaing\/css\/styles\.scss}line{font-family:\0000323}}
 body {
-  background: url("../Images/RuneScape bg.png") no-repeat center center fixed #3b5494;
+  background: #3b5494 url("../Images/RuneScape bg.png") no-repeat center center fixed;
+  background-size: cover;
   text-align: center;
   margin-right: auto;
   margin-left: auto;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/merda\/OneDrive\/Ambiente\%20de\%20Trabalho\/Design\%20de\%20Meios\%20Interativos\/Sight-Seaing\/css\/styles\.scss}line{font-family:\0000330}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/merda\/OneDrive\/Ambiente\%20de\%20Trabalho\/Design\%20de\%20Meios\%20Interativos\/Sight-Seaing\/css\/styles\.scss}line{font-family:\0000331}}
 body header h1 {
   color: white;
   margin-top: 70px;
   margin-bottom: 0;
   font-size: 3rem;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/merda\/OneDrive\/Ambiente\%20de\%20Trabalho\/Design\%20de\%20Meios\%20Interativos\/Sight-Seaing\/css\/styles\.scss}line{font-family:\0000338}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/merda\/OneDrive\/Ambiente\%20de\%20Trabalho\/Design\%20de\%20Meios\%20Interativos\/Sight-Seaing\/css\/styles\.scss}line{font-family:\0000339}}
 body main {
   /*min-height: calc(100vh - 137px - 60px);
   position: relative;*/
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/merda\/OneDrive\/Ambiente\%20de\%20Trabalho\/Design\%20de\%20Meios\%20Interativos\/Sight-Seaing\/css\/styles\.scss}line{font-family:\0000342}}
-body main img#photo {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/merda\/OneDrive\/Ambiente\%20de\%20Trabalho\/Design\%20de\%20Meios\%20Interativos\/Sight-Seaing\/css\/styles\.scss}line{font-family:\0000343}}
+body main img {
   margin: auto;
   max-height: 300px;
   max-width: 50%;
@@ -46,48 +47,69 @@ body main img#photo {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  opacity: .7;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/merda\/OneDrive\/Ambiente\%20de\%20Trabalho\/Design\%20de\%20Meios\%20Interativos\/Sight-Seaing\/css\/styles\.scss}line{font-family:\0000354}}
-body footer {
-  height: 60px;
-  width: 100%;
-  position: absolute;
-  bottom: 0;
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/merda\/OneDrive\/Ambiente\%20de\%20Trabalho\/Design\%20de\%20Meios\%20Interativos\/Sight-Seaing\/css\/styles\.scss}line{font-family:\0000352}}
+body main img#photo {
+  z-index: 999;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/merda\/OneDrive\/Ambiente\%20de\%20Trabalho\/Design\%20de\%20Meios\%20Interativos\/Sight-Seaing\/css\/styles\.scss}line{font-family:\0000360}}
-body footer nav {
-  height: 100%;
+body footer #bottom-bar {
+  position: absolute;
+  bottom: 0;
+  background: black;
+  width: 50%;
+  height: 80px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/merda\/OneDrive\/Ambiente\%20de\%20Trabalho\/Design\%20de\%20Meios\%20Interativos\/Sight-Seaing\/css\/styles\.scss}line{font-family:\0000363}}
-body footer nav ul {
-  margin: 0;
-  width: 100%;
-  height: 100%;
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/merda\/OneDrive\/Ambiente\%20de\%20Trabalho\/Design\%20de\%20Meios\%20Interativos\/Sight-Seaing\/css\/styles\.scss}line{font-family:\0000367}}
+body footer #bottom-bar img#man {
+  height: 150px;
+  position: absolute;
+  top: -150px;
+  right: 50px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/merda\/OneDrive\/Ambiente\%20de\%20Trabalho\/Design\%20de\%20Meios\%20Interativos\/Sight-Seaing\/css\/styles\.scss}line{font-family:\0000368}}
-body footer nav ul li {
-  list-style-type: none;
-  background: #222e45;
-  border: 1px solid #27354f;
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/merda\/OneDrive\/Ambiente\%20de\%20Trabalho\/Design\%20de\%20Meios\%20Interativos\/Sight-Seaing\/css\/styles\.scss}line{font-family:\0000375}}
+body footer #bottom-center {
+  height: 80px;
+  width: 80px;
+  position: absolute;
+  bottom: 0;
+  right: 50%;
+  transform: translateX(50%);
+  background: black;
+  border-radius: 100%;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/merda\/OneDrive\/Ambiente\%20de\%20Trabalho\/Design\%20de\%20Meios\%20Interativos\/Sight-Seaing\/css\/styles\.scss}line{font-family:\0000385}}
+body footer #bottom-center i.fa-chevron-down {
+  font-size: 2em;
   color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation-name: bounce;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  transition: ease-in-out;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/merda\/OneDrive\/Ambiente\%20de\%20Trabalho\/Design\%20de\%20Meios\%20Interativos\/Sight-Seaing\/css\/styles\.scss}line{font-family:\0000374}}
-body footer nav ul li:hover {
-  background-color: #27354f;
+
+/* KEYFRAMES */
+@keyframes bounce {
+  0% {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  10%, 30% {
+    top: calc(50% + 10%);
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  20%, 40%, 100% {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/merda\/OneDrive\/Ambiente\%20de\%20Trabalho\/Design\%20de\%20Meios\%20Interativos\/Sight-Seaing\/css\/styles\.scss}line{font-family:\0000378}}
-body footer nav ul li i {
-  margin: auto;
-  color: white;
-  text-decoration: none;
-  font-size: 1.25rem;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/merda\/OneDrive\/Ambiente\%20de\%20Trabalho\/Design\%20de\%20Meios\%20Interativos\/Sight-Seaing\/css\/styles\.scss}line{font-family:\0000384}}
-body footer nav ul li i p {
-  font-size: 1rem;
-  line-height: 15px;
-  margin-top: 5px;
-}
+/* QUERIES */
 
 /*# sourceMappingURL=styles.css.map */

@@ -21,7 +21,8 @@ $button-border: lighten($button, 3%);
 /* PAGE SPECIFIC */
 
 body {
-	background: url("../Images/RuneScape bg.png") no-repeat center center fixed #3b5494;
+	background: #3b5494 url("../Images/RuneScape bg.png") no-repeat center center fixed;
+	background-size: cover;
 	text-align: center;
 	margin-right: auto;
 	margin-left: auto;
@@ -39,7 +40,7 @@ body {
 		/*min-height: calc(100vh - 137px - 60px);
 		position: relative;*/
 
-		img#photo {
+		img {
 			margin: auto;
 			max-height: 300px;
 			max-width: 50%;
@@ -47,48 +48,84 @@ body {
 			top: 50%;
 			left: 50%;
 			transform: translate(-50%, -50%);
-			opacity: .7;
+
+			&#photo {
+				z-index: 999;
+			}
 		}
 	}
 
 	footer {
-		height: 60px;
-		width: 100%;
-		position: absolute;
-		bottom: 0;
 
-		nav {
-			height: 100%;
+		#bottom-bar {
+			position: absolute;
+			bottom: 0;
+			background: black;
+			width: 50%;
+			height: 80px;
 
-			ul {
-				margin: 0;
-				width: 100%;
-				height: 100%;
+			img#man {
+				height: 150px;
+				position: absolute;
+				top: -150px;
+				right: 50px;
+			}
+		}
 
-				li {
-					list-style-type: none;
-					background: $button;
-					border: 1px solid $button-border;
-					color: white;
+		#bottom-center {
+			height: 80px;
+		    width: 80px;
+			position: absolute;
+			bottom: 0;
+			right: 50%;
+			transform: translateX(50%);
+			background: black;
+			border-radius: 100%;
 
-					&:hover {
-						background-color: $button-border;
-					}
-
-					i {
-						margin: auto;
-						color: white;
-						text-decoration: none;
-						font-size: 1.25rem;
-
-						p {
-							font-size: 1rem;
-							line-height: 15px;
-							margin-top: 5px;
-						}
-					}
-				}
+			i.fa-chevron-down {
+				font-size: 2em;
+				color: white;
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+				animation-name: bounce;
+				animation-duration: 3s;
+				animation-iteration-count: infinite;
+				transition: ease-in-out;
 			}
 		}
 	}
 }
+
+/* KEYFRAMES */
+
+@keyframes bounce {
+	0% {
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+
+	10%, 30% {
+		top: calc(50% + 10%);
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+
+	20%, 40%, 100% {
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+
+}
+/* QUERIES */
+
+@media screen and (min-width: 640px) {
+
+}
+
+@media screen and (min-width: 1024px) {
+
+	}
