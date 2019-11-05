@@ -20,7 +20,7 @@ a, i, p {
 /* PAGE SPECIFIC */
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/merda\/OneDrive\/Ambiente\%20de\%20Trabalho\/Design\%20de\%20Meios\%20Interativos\/Sight-Seaing\/css\/styles\.scss}line{font-family:\0000323}}
 body {
-  background: #3b5494 url("../Images/RuneScape bg.png") no-repeat center center fixed;
+  background: #3b5494 url("../Images/Sky and sea.png") no-repeat center center fixed;
   background-size: cover;
   text-align: center;
   margin-right: auto;
@@ -39,36 +39,51 @@ body main {
   position: relative;*/
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/merda\/OneDrive\/Ambiente\%20de\%20Trabalho\/Design\%20de\%20Meios\%20Interativos\/Sight-Seaing\/css\/styles\.scss}line{font-family:\0000343}}
-body main img {
-  margin: auto;
-  max-height: 300px;
+body main img#foca {
+  position: absolute;
+  right: 0;
+  bottom: 15%;
+  width: 200px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/merda\/OneDrive\/Ambiente\%20de\%20Trabalho\/Design\%20de\%20Meios\%20Interativos\/Sight-Seaing\/css\/styles\.scss}line{font-family:\0000350}}
+body main img#photo,
+body main img#moon {
+  max-height: 200px;
   max-width: 50%;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/merda\/OneDrive\/Ambiente\%20de\%20Trabalho\/Design\%20de\%20Meios\%20Interativos\/Sight-Seaing\/css\/styles\.scss}line{font-family:\0000352}}
-body main img#photo {
-  z-index: 999;
+  opacity: .7;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/merda\/OneDrive\/Ambiente\%20de\%20Trabalho\/Design\%20de\%20Meios\%20Interativos\/Sight-Seaing\/css\/styles\.scss}line{font-family:\0000360}}
-body footer #bottom-bar {
+body main img#photo#photo,
+body main img#moon#photo {
+  z-index: 999;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/merda\/OneDrive\/Ambiente\%20de\%20Trabalho\/Design\%20de\%20Meios\%20Interativos\/Sight-Seaing\/css\/styles\.scss}line{font-family:\0000368}}
+body footer .bottom-bar {
   position: absolute;
   bottom: 0;
   background: black;
   width: 50%;
   height: 80px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/merda\/OneDrive\/Ambiente\%20de\%20Trabalho\/Design\%20de\%20Meios\%20Interativos\/Sight-Seaing\/css\/styles\.scss}line{font-family:\0000367}}
-body footer #bottom-bar img#man {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/merda\/OneDrive\/Ambiente\%20de\%20Trabalho\/Design\%20de\%20Meios\%20Interativos\/Sight-Seaing\/css\/styles\.scss}line{font-family:\0000375}}
+body footer .bottom-bar.rimlight {
+  background: white;
+  bottom: 2px;
+  width: calc(50% + 2px);
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/merda\/OneDrive\/Ambiente\%20de\%20Trabalho\/Design\%20de\%20Meios\%20Interativos\/Sight-Seaing\/css\/styles\.scss}line{font-family:\0000381}}
+body footer .bottom-bar img#man {
   height: 150px;
   position: absolute;
   top: -150px;
   right: 50px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/merda\/OneDrive\/Ambiente\%20de\%20Trabalho\/Design\%20de\%20Meios\%20Interativos\/Sight-Seaing\/css\/styles\.scss}line{font-family:\0000375}}
-body footer #bottom-center {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/merda\/OneDrive\/Ambiente\%20de\%20Trabalho\/Design\%20de\%20Meios\%20Interativos\/Sight-Seaing\/css\/styles\.scss}line{font-family:\0000389}}
+body footer .bottom-center {
   height: 80px;
   width: 80px;
   position: absolute;
@@ -78,8 +93,13 @@ body footer #bottom-center {
   background: black;
   border-radius: 100%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/merda\/OneDrive\/Ambiente\%20de\%20Trabalho\/Design\%20de\%20Meios\%20Interativos\/Sight-Seaing\/css\/styles\.scss}line{font-family:\0000385}}
-body footer #bottom-center i.fa-chevron-down {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/merda\/OneDrive\/Ambiente\%20de\%20Trabalho\/Design\%20de\%20Meios\%20Interativos\/Sight-Seaing\/css\/styles\.scss}line{font-family:\0000399}}
+body footer .bottom-center.rimlight {
+  background: white;
+  bottom: 2px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/merda\/OneDrive\/Ambiente\%20de\%20Trabalho\/Design\%20de\%20Meios\%20Interativos\/Sight-Seaing\/css\/styles\.scss}line{font-family:\00003104}}
+body footer .bottom-center i.fa-chevron-down {
   font-size: 2em;
   color: white;
   position: absolute;
