@@ -24,6 +24,11 @@ p {
   	color: #333333;
 }
 
+ul {
+	list-style: none;
+	margin: 0;
+}
+
 /* PAGE SPECIFIC */
 
 body {
@@ -45,7 +50,7 @@ body {
 
 		div#take-pic {
 			position: relative;
-			padding-top: 230px;
+			height: 200px;
 
 			img#photo,
 			img#moon {
@@ -103,8 +108,20 @@ body {
 	}
 
 	footer {
+		background: #00cfff;
+		color: white;
+		padding: 10px 0;
 
-		
+		h2 {
+			font-size: 2em;
+			margin-bottom: 0;
+		}
+
+		ul {
+			li {
+				text-align: center;
+			}
+		}
 	}
 }
 
