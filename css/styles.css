@@ -104,7 +104,7 @@ body main div#species-container div#species-category-wrapper img {
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/merda\/OneDrive\/Ambiente\%20de\%20Trabalho\/Design\%20de\%20Meios\%20Interativos\/Sight-Seaing\/css\/styles\.scss}line{font-family:\00003106}}
 body footer {
-  background: #00cfff;
+  background: linear-gradient(to bottom, #2e358d, #2e112f);
   color: white;
   padding: 10px 0;
 }
