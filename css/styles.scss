@@ -10,6 +10,7 @@ h1, h2, h3 {
 	font-family: 'Comic Sans', cursive;
 	font-family: 'Lobster', cursive;
 	font-family: 'Rancho', cursive;
+	text-align: center;
 }
 
 a, i, p {
@@ -17,79 +18,88 @@ a, i, p {
 	margin: 0;
 }
 
-$button: #222e45;
-$button-border: lighten($button, 3%);
+p {
+	text-align: justify;
+  	text-justify: inter-word;
+  	color: #333333;
+}
 
 /* PAGE SPECIFIC */
 
 body {
-	background: #3b5494 url("../Images/Sky and sea.png") no-repeat center center fixed;
-	background-size: cover;
-	text-align: center;
+	background: #f9fafa;
 	margin-right: auto;
 	margin-left: auto;
 
 	header {
 
-		div#first {
-			position: relative;
-			height: 100vh;
-		}
+		height: 85vh;
+		background: url("../Images/bg 1.png") no-repeat center bottom;
 
 		h1 {
 			color: white;
-			padding-top: 70px;
+			padding-top: 50px;
 			margin-bottom: 0;
 			font-size: 4rem;
 		}
 
-		img#foca {
-			position: absolute;
-			right: 0;
-			bottom: 15%;
-			width: 200px;
-		}
+		div#take-pic {
+			position: relative;
+			padding-top: 230px;
 
-		img#photo,
-		img#moon {
-			max-height: 200px;
-			max-width: 50%;
-			position: absolute;
-			top: 50%;
-			left: 50%;
-			transform: translate(-50%, -50%);
-			opacity: .7;
-
-			&#photo {
-				z-index: 999;
-			}
-		}
-
-		div#bottom {
-			height: 100%;
-			width: 100%;
-			background: url(../Images/bottom.png) no-repeat bottom center fixed;
-			background-size: 100vw;
-		}
-
-		i.fa-chevron-down {
-				font-size: 2em;
-				color: white;
+			img#photo,
+			img#moon {
+				max-height: 200px;
+				max-width: 50%;
 				position: absolute;
-				bottom: 20px;
+				top: 50%;
 				left: 50%;
-				transform: translateX(-50%);
-				animation-name: bounce;
-				animation-duration: 3s;
-				animation-iteration-count: infinite;
-				transition: ease-in-out;
+				transform: translate(-50%, -50%);
+				opacity: .7;
 			}
+		}
 
-
+		/*i.fa-chevron-down {
+			font-size: 2em;
+			color: white;
+			position: absolute;
+			bottom: 20px;
+			left: 50%;
+			transform: translateX(-50%);
+			animation-name: bounce;
+			animation-duration: 3s;
+			animation-iteration-count: infinite;
+			transition: ease-in-out;
+		}*/
 	}
 
 	main {
 
+		section {
+			max-width: 80%;
+			margin: auto;
+			padding: 10px 0 20px;
+		}
+
+		h1 {
+			font-size: 3rem;
+			margin-bottom: 0;
+			color: #333333;
+		}
+
+		div#species-container {
+			background: #f2f4f4;
+
+			div#species-category-wrapper {
+				text-align: center;
+
+				img {
+					width: 30%;
+					height: auto;
+					padding: 3%;
+				}
+			}
+		}
 	}
 
 	footer {
