@@ -13,6 +13,10 @@ h1, h2, h3 {
 	text-align: center;
 }
 
+h1 {
+	line-height: 40px;
+}
+
 a, i, p {
 	font-family: 'Montserrat', sans-serif;
 	margin: 0;
@@ -39,28 +43,33 @@ body {
 	header {
 
 		height: 85vh;
-		background: url("../Images/bg 1.png") no-repeat center bottom;
+		background: url("../Images/bg mobile.png") no-repeat center bottom;
+		background-size: cover;
 
 		h1 {
 			color: white;
 			padding-top: 50px;
 			margin-bottom: 0;
 			font-size: 4rem;
+			line-height: 70px;
 		}
 
 		div#take-pic {
 			position: relative;
-			height: 200px;
+			height: 50%;
 
 			img#photo,
 			img#moon {
-				max-height: 200px;
-				max-width: 50%;
 				position: absolute;
 				top: 50%;
 				left: 50%;
 				transform: translate(-50%, -50%);
-				opacity: .7;
+			}
+
+			img#moon {
+				width: 65%;
+				max-width: 360px;
+				max-height: 40vh;
 			}
 		}
 
