@@ -11,6 +11,7 @@ h1, h2, h3 {
 	font-family: 'Lobster', cursive;
 	font-family: 'Rancho', cursive;
 	text-align: center;
+	color: white;
 }
 
 a, i, p {
@@ -21,7 +22,7 @@ a, i, p {
 p {
 	text-align: justify;
   	text-justify: inter-word;
-  	color: #333333;
+  	color: white;
 }
 
 ul {
@@ -32,19 +33,19 @@ ul {
 /* PAGE SPECIFIC */
 
 body {
-	background: #f9fafa;
+	background: #1d0b1e;
 	margin-right: auto;
 	margin-left: auto;
 
 	header {
 
-		height: 85vh;
+		height: 65vh;
 		background: url("../Images/bg mobile.png") no-repeat center bottom;
 		background-size: cover;
 
 		h1 {
 			color: white;
-			padding-top: 50px;
+			padding: 10px 0;
 			margin-bottom: 0;
 			font-size: 4rem;
 		}
@@ -55,8 +56,8 @@ body {
 
 			img#moon {
 				width: 65%;
-				max-width: 360px;
-				max-height: 40vh;
+				max-width: 300px;
+				max-height: 30vh;
 			}
 		}
 
@@ -84,12 +85,11 @@ body {
 
 		h1 {
 			font-size: 2.5rem;
-			color: #333333;
 			margin-bottom: 0;
 		}
 
 		div#species-container {
-			background: #f2f4f4;
+			background: #2e112f;
 
 			div#species-category-wrapper {
 				text-align: center;
@@ -97,7 +97,12 @@ body {
 				img {
 					width: 30%;
 					height: auto;
-					padding: 2%;
+					padding: 3%;
+					transition: padding 0.5s;
+
+					&:hover {
+						padding: 1% !important;
+					}
 				}
 			}
 		}
@@ -149,15 +154,6 @@ body {
 @media screen and (min-width: 640px) {
 	body {
 		main {
-			div#species-container {
-				div#species-category-wrapper {
-					img {
-						width: 30%;
-						height: auto;
-						padding: 2%;
-					}
-				}
-			}
 
 			div#contacts-container {
 				p {
@@ -172,7 +168,7 @@ body {
 	body {
 		header {
 			height: 300px;
-			background: url("../Images/bg desktop.png") no-repeat center bottom;
+			background: url("../Images/bg desktop.png") no-repeat center top;
 			background-size: cover;
 			h1 {
 				padding-top: 20px;
@@ -197,8 +193,11 @@ body {
 				div#species-category-wrapper {
 					img {
 						width: 15%;
-						height: auto;
 						padding: 1%;
+
+						&:hover {
+							padding: 0 !important;
+						}
 					}
 				}
 			}
