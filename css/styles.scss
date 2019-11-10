@@ -1,3 +1,7 @@
+/* Variables */
+
+$text-color: #2e112f;
+
 /* GENERAL STUFF */
 
 * {
@@ -11,7 +15,7 @@ h1, h2, h3 {
 	font-family: 'Lobster', cursive;
 	font-family: 'Rancho', cursive;
 	text-align: center;
-	color: #333333;
+	color: $text-color;
 }
 
 a, i, p {
@@ -22,7 +26,7 @@ a, i, p {
 p {
 	text-align: justify;
   	text-justify: inter-word;
-  	color: #333333;
+  	color: $text-color;
 }
 
 ul {
