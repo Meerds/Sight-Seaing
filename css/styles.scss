@@ -172,15 +172,33 @@ body {
 @media screen and (min-width: 1024px) {
 	body {
 		header {
-			height: 300px;
-			background: url("../Images/bg desktop.png") no-repeat center top;
+			height: 200px;
+			background: url("../Images/bg desktop.png") no-repeat center bottom;
 			background-size: cover;
+			position: relative;
+
 			h1 {
-				padding-top: 20px;
+				padding-top: 40px;
+				font-size: 5rem;
+				position: absolute;
+    			
+    			&#Sight {
+    				right: 50%;
+    				transform: translateX(-100px);
+    			}
+
+    			&#Seaing {
+    				left: 50%;
+    				transform: translateX(90px);
+    			}
 			}
 
 			div#take-pic {
 				height: 150px;
+				position: absolute;
+    			top: 50%;
+    			left: 50%;
+    			transform: translate(-50%, -50%);
 
 				img#moon {
 					height: 100%;
@@ -190,6 +208,8 @@ body {
 		}
 
 		main {
+			min-height: calc(100vh - 200px - 90px);
+
 			section {
 				max-width: 1000px;
 			}
@@ -209,6 +229,8 @@ body {
 		}
 
 		footer {
+			height: 90px;
+			
 			ul {
 				display: flex;
 				justify-content: space-evenly;
