@@ -11,7 +11,7 @@ h1, h2, h3 {
 	font-family: 'Lobster', cursive;
 	font-family: 'Rancho', cursive;
 	text-align: center;
-	color: white;
+	color: #333333;
 }
 
 a, i, p {
@@ -22,7 +22,7 @@ a, i, p {
 p {
 	text-align: justify;
   	text-justify: inter-word;
-  	color: white;
+  	color: #333333;
 }
 
 ul {
@@ -33,7 +33,7 @@ ul {
 /* PAGE SPECIFIC */
 
 body {
-	background: #1d0b1e;
+	background: #f9fafa;
 	margin-right: auto;
 	margin-left: auto;
 
@@ -88,9 +88,8 @@ body {
 			margin-bottom: 0;
 		}
 
-		section#species {
-			border-top: 2px solid #401842;
-			border-bottom: 2px solid #401842;
+		div#species-container {
+			background: #f2f4f4;
 
 			div#species-category-wrapper {
 				text-align: center;
@@ -117,6 +116,7 @@ body {
 		h2 {
 			font-size: 2em;
 			margin-bottom: 0;
+			color: white;
 		}
 
 		ul {
