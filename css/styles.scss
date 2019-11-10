@@ -174,13 +174,15 @@ body {
 		header {
 			height: 200px;
 			background: url("../Images/bg desktop.png") no-repeat center bottom;
-			background-size: cover;
 			position: relative;
 
 			h1 {
 				padding-top: 40px;
 				font-size: 5rem;
 				position: absolute;
+				padding-bottom: 0;
+				line-height: 90px;
+				bottom: 50%;
     			
     			&#Sight {
     				right: 50%;
