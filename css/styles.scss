@@ -88,8 +88,9 @@ body {
 			margin-bottom: 0;
 		}
 
-		div#species-container {
-			background: #2e112f;
+		section#species {
+			border-top: 2px solid #401842;
+			border-bottom: 2px solid #401842;
 
 			div#species-category-wrapper {
 				text-align: center;
