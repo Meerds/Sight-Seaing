@@ -59,7 +59,7 @@ body {
 		}
 
 		div#take-pic {
-			height: 50%;
+			height: 300px;
 			text-align: center;
 
 			img#moon {
@@ -108,7 +108,8 @@ body {
 				display: flex;
 				flex-direction: column;
 				justify-content: space-evenly;
-				height: calc(35vh - 80px);
+				height: calc(35vh - 66px);
+				padding-bottom: 20px;
 			}
 		}
 
@@ -136,7 +137,7 @@ body {
 		padding: 10px 0;
 
 		h2 {
-			font-size: 2em;
+			font-size: 2rem;
 			margin-bottom: 0;
 			color: white;
 		}
@@ -175,10 +176,6 @@ body {
 /* QUERIES */
 
 @media screen and (min-width: 640px) {
-
-	* {
-		font-size: 1.5rem;
-	}
 	
 	body {
 		header {
@@ -190,19 +187,6 @@ body {
 			h1 {
 				font-size: 3.5rem;
 			}
-
-			div#tutorial-container {
-				height: 35vh;
-
-			ol {
-				font-size: 1.4rem;
-				display: flex;
-				flex-direction: column;
-				justify-content: space-evenly;
-				height: calc(35vh - 66px);
-				padding-bottom: 20px;
-			}
-		}
 
 			div#contacts-container {
 				p {
@@ -261,6 +245,18 @@ body {
 				max-width: 1000px;
 			}
 			
+			div#tutorial-container {
+				height: initial;
+
+				ol {
+					display: flex;
+					flex-direction: row;
+					justify-content: space-evenly;
+					height: initial;
+					padding-bottom: initial;
+				}
+			}
+
 			div#species-container {
 				div#species-category-wrapper {
 					img {
