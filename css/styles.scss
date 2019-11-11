@@ -8,6 +8,7 @@ $text-color: #2e112f;
 	margin: 0;
 	padding: 0;
 	font-size: 16px;
+	font-family: 'Montserrat', sans-serif;
 }
 
 h1, h2, h3 {
@@ -19,7 +20,6 @@ h1, h2, h3 {
 }
 
 a, i, p {
-	font-family: 'Montserrat', sans-serif;
 	margin: 0;
 }
 
@@ -32,6 +32,10 @@ p {
 ul {
 	list-style: none;
 	margin: 0;
+}
+
+ol {
+	margin-bottom: 0;
 }
 
 /* PAGE SPECIFIC */
@@ -92,9 +96,23 @@ body {
 			margin-bottom: 0;
 		}
 
-		div#species-container {
+		div.darker-section {
 			background: #f2f4f4;
+		}
 
+		div#tutorial-container {
+			height: 35vh;
+
+			ol {
+				font-size: 1.4rem;
+				display: flex;
+				flex-direction: column;
+				justify-content: space-evenly;
+				height: calc(35vh - 80px);
+			}
+		}
+
+		div#species-container {
 			div#species-category-wrapper {
 				text-align: center;
 
@@ -157,8 +175,34 @@ body {
 /* QUERIES */
 
 @media screen and (min-width: 640px) {
+
+	* {
+		font-size: 1.5rem;
+	}
+	
 	body {
+		header {
+			h1 {
+				font-size: 6rem;
+			}
+		}
 		main {
+			h1 {
+				font-size: 3.5rem;
+			}
+
+			div#tutorial-container {
+				height: 35vh;
+
+			ol {
+				font-size: 1.4rem;
+				display: flex;
+				flex-direction: column;
+				justify-content: space-evenly;
+				height: calc(35vh - 66px);
+				padding-bottom: 20px;
+			}
+		}
 
 			div#contacts-container {
 				p {
@@ -170,6 +214,7 @@ body {
 }
 
 @media screen and (min-width: 1024px) {
+
 	body {
 		header {
 			height: 200px;
