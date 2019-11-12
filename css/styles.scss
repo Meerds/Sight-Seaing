@@ -1,6 +1,6 @@
 /* Variables */
 
-$text-color: #2e112f;
+$text-color: /*#2e112f*/white;
 
 /* GENERAL STUFF */
 
@@ -9,14 +9,14 @@ $text-color: #2e112f;
 	padding: 0;
 	font-size: 16px;
 	font-family: 'Montserrat', sans-serif;
+	color: $text-color !important;
 }
 
 h1, h2, h3 {
 	font-family: 'Comic Sans', cursive;
 	font-family: 'Lobster', cursive;
-	font-family: 'Rancho', cursive;
+	/*font-family: 'Rancho', cursive;*/
 	text-align: center;
-	color: $text-color;
 }
 
 a, i, p {
@@ -26,7 +26,6 @@ a, i, p {
 p {
 	text-align: justify;
   	text-justify: inter-word;
-  	color: $text-color;
 }
 
 ul {
@@ -41,32 +40,17 @@ ol {
 /* PAGE SPECIFIC */
 
 body {
-	background: #f9fafa;
-	margin-right: auto;
-	margin-left: auto;
+	background: #f2f4f4 url("../Images/bg sky.png") no-repeat center bottom;
+	background-size: cover;
 
 	header {
-
-		height: 65vh;
-		background: url("../Images/bg mobile.png") no-repeat center bottom;
-		background-size: cover;
+		height: 120px;
 
 		h1 {
 			color: white;
-			padding: 10px 0;
+			padding: 30px 0 20px;
 			margin-bottom: 0;
-			font-size: 4rem;
-		}
-
-		div#take-pic {
-			height: 300px;
-			text-align: center;
-
-			img#moon {
-				width: 65%;
-				max-width: 300px;
-				max-height: 30vh;
-			}
+			font-size: 3.5rem;
 		}
 
 		/*i.fa-chevron-down {
@@ -84,32 +68,21 @@ body {
 	}
 
 	main {
+		min-height: calc(100vh - 100px - 200px);
 
 		section {
 			max-width: 80%;
-			margin: auto;
-			padding: 10px 0 20px;
+			margin: auto auto 20px;
 		}
 
-		h1 {
-			font-size: 2.5rem;
-			margin-bottom: 0;
-		}
+		div#take-pic {
+			text-align: center;
+			margin-bottom: 30px;
 
-		div.darker-section {
-			background: #f2f4f4;
-		}
-
-		div#tutorial-container {
-			height: 35vh;
-
-			ol {
-				font-size: 1.4rem;
-				display: flex;
-				flex-direction: column;
-				justify-content: space-evenly;
-				height: calc(35vh - 66px);
-				padding-bottom: 20px;
+			img#moon {
+				width: 65%;
+				max-width: 300px;
+				max-height: 30vh;
 			}
 		}
 
@@ -132,154 +105,36 @@ body {
 	}
 
 	footer {
-		background: linear-gradient(to bottom, #2e358d, #2e112f);
-		color: white;
-		padding: 10px 0;
+		height: 200px;
+		background: url("../Images/bg foot.png") no-repeat center bottom;
+		background-size: cover;
+		position: relative;
 
-		h2 {
-			font-size: 2rem;
-			margin-bottom: 0;
-			color: white;
-		}
+		div#footer-text {
+			position: absolute;
+			bottom: 5px;
+			left: 50%;
+			transform: translateX(-50%);
+			height: 100px;
+			text-align: center;
 
-		ul {
-			li {
-				text-align: center;
+			ul {
+				li {
+					font-size: .75rem;
+				}
 			}
 		}
 	}
 }
-
-/* KEYFRAMES */
-
-@keyframes bounce {
-	0% {
-		bottom: 2%;
-		left: 50%;
-		transform: translateX(-50%);
-	}
-
-	10%, 30% {
-		bottom: 1%;
-		left: 50%;
-		transform: translateX(-50%);
-	}
-
-	20%, 40%, 100% {
-		bottom: 2%;
-		left: 50%;
-		transform: translateX(-50%);
-	}
-
-}
+	
+/* EXTRA */
 
 /* QUERIES */
 
 @media screen and (min-width: 640px) {
-	
-	body {
-		header {
-			h1 {
-				font-size: 6rem;
-			}
-		}
-		main {
-			h1 {
-				font-size: 3.5rem;
-			}
 
-			div#contacts-container {
-				p {
-					text-align: center;
-				}
-			}
-		}
-	}
 }
 
 @media screen and (min-width: 1024px) {
 
-	body {
-		header {
-			height: 200px;
-			background: url("../Images/bg desktop.png") no-repeat center bottom;
-			position: relative;
-
-			h1 {
-				padding-top: 40px;
-				font-size: 5rem;
-				position: absolute;
-				padding-bottom: 0;
-				line-height: 90px;
-				bottom: 50%;
-    			
-    			&#Sight {
-    				right: 50%;
-    				transform: translateX(-100px);
-    			}
-
-    			&#Seaing {
-    				left: 50%;
-    				transform: translateX(90px);
-    			}
-			}
-
-			div#take-pic {
-				height: 150px;
-				position: absolute;
-    			top: 50%;
-    			left: 50%;
-    			transform: translate(-50%, -50%);
-
-				img#moon {
-					height: 100%;
-					width: auto;
-				}
-			}
-		}
-
-		main {
-			min-height: calc(100vh - 200px - 90px);
-
-			section {
-				max-width: 1000px;
-			}
-			
-			div#tutorial-container {
-				height: initial;
-
-				ol {
-					display: flex;
-					flex-direction: row;
-					justify-content: space-evenly;
-					height: initial;
-					padding-bottom: initial;
-				}
-			}
-
-			div#species-container {
-				div#species-category-wrapper {
-					img {
-						width: 15%;
-						padding: 1%;
-
-						&:hover {
-							padding: 0 !important;
-						}
-					}
-				}
-			}
-		}
-
-		footer {
-			height: 90px;
-			
-			ul {
-				display: flex;
-				justify-content: space-evenly;
-				max-width: 80%;
-				margin: auto;
-			}
-		}
-	}
 }
