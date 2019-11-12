@@ -106,7 +106,8 @@ body {
 
 	footer {
 		height: 200px;
-		background: url("../Images/bg foot mobile 2.png") no-repeat center bottom;
+		background: url("../Images/bg foot mobile.png") no-repeat center bottom;
+		background-size: cover;
 		position: relative;
 
 		div#footer-text {
@@ -152,6 +153,9 @@ body {
 		}
 
 		footer {
+			background: url("../Images/bg foot tablet.png") no-repeat center bottom;
+			background-size: cover;
+
 			div#footer-text {
 				h3 {
 					font-size: 1.4rem;
@@ -171,7 +175,8 @@ body {
 		}
 
 		footer {
-			background: url("../Images/bg foot.png") no-repeat center bottom;
+			background: url("../Images/bg foot desktop.png") no-repeat center bottom;
+			background-size: cover;
 		}
 	}
 }
