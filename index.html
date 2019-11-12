@@ -20,27 +20,18 @@
 
     <!-- main -->
     <main>
+      <div id="main-wrapper">
       <div id="take-pic">
         <img id="moon" src="Images/Moon.svg" alt="take picture">
       </div>
-      <!--<div id="tutorial-container">
-        <section id="tutorial">
-          <h1>Como funciona?</h1>
-          <ol>
-            <li>
-              Tira a fotografia
-            </li>
-            <li>
-              Preenche o formulário
-            </li>
-            <li>
-              Envia
-            </li>
-          </ol>
-        </section>
-      </div>-->
-      <div id="about-container" class="darker-section">
-        <section id="about">
+
+      <!-- abrir as bolas do meio pos reveals e tal -->
+      <div id="bolas-do-meio">
+
+      <!-- About reveal -->
+      <img src="Images/Photo.svg" alt="Sobre o projeto" id="about-button" data-open="about">
+      <div class="reveal" id="about" data-reveal data-animation-in="fade-in" data-animation-out="fade-out">
+        <div id="about-container">
           <h1>Sobre</h1>
           <p class="hide-for-large"> <!-- 1 paragraph -->
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus purus nunc, fringilla sed fringilla eget, commodo nec velit. Maecenas et accumsan mauris. <a href="">Ler mais...</a>
@@ -49,36 +40,53 @@
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus purus nunc, fringilla sed fringilla eget, commodo nec velit. Maecenas et accumsan mauris. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus purus nunc, fringilla sed fringilla eget, commodo nec velit. Maecenas et accumsan mauris. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus purus nunc, fringilla sed fringilla eget, commodo nec velit. Maecenas et accumsan mauris.<br>
             <b>More text on desktop because we have more space 'n' stuff :D</b>
           </p>
-        </section>
-      </div>
-      <div id="species-container">
-        <section id="species">
+        </div>
+        <button class="close-button" data-close aria-label="Close modal" type="button">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+
+      <!-- Species reveal -->
+      <img src="Images/Photo.svg" alt="Lista de espécies" id="species-button" data-open="species">
+      <div class="reveal" id="species" data-reveal data-animation-in="fade-in" data-animation-out="fade-out">
+        <div id="species-container">
           <h1>Espécies</h1>
-            <div id="species-category-wrapper">
-              <a href="" title="Tubarões"><img src="Images/Photo.svg" alt="Tubarões"></a>
-              <a href="" title="Baleias"><img src="Images/Photo.svg" alt="Baleias"></a>
-              <a href="" title="Golfinhos"><img src="Images/Photo.svg" alt="Golfinhos"></a>
-              <a href="" title="Tartarugas"><img src="Images/Photo.svg" alt="Tartarugas"></a>
-              <a href="" title="Outros Peixes"><img src="Images/Photo.svg" alt="Outros Peixes"></a>
-            </div>
-        </section>
+          <a href="" title="Tubarões"><img src="Images/Photo.svg" alt="Tubarões"></a>
+          <a href="" title="Baleias"><img src="Images/Photo.svg" alt="Baleias"></a>
+          <a href="" title="Golfinhos"><img src="Images/Photo.svg" alt="Golfinhos"></a>
+          <a href="" title="Tartarugas"><img src="Images/Photo.svg" alt="Tartarugas"></a>
+          <a href="" title="Outros Peixes"><img src="Images/Photo.svg" alt="Outros Peixes"></a>
+        </div>
+        <button class="close-button" data-close aria-label="Close modal" type="button">
+          <span aria-hidden="true">&times;</span>
+        </button>
       </div>
-      <div id="contacts-container" class="darker-section">
-        <section id="contacts">
+
+      <!-- Contacts reveal -->
+      <img src="Images/Photo.svg" alt="Contactos" id="contacts-button" data-open="contacts">
+      <div class="reveal" id="contacts" data-reveal data-animation-in="fade-in" data-animation-out="fade-out">
+        <div id="contacts-container">
           <h1>Contactos</h1>
           <ul>
             <li>
-              <p><b>Telemóvel:</b> <a href="tel:+351966666666">966 666 666</a></p>
+              <b>Telemóvel:</b> <a href="tel:+351966666666">966 666 666</a>
             </li>
             <li>
-              <p><b>Telefone:</b> <a href="tel:+351291111111">291 111 111</a></p>
+              <b>Telefone:</b> <a href="tel:+351291111111">291 111 111</a>
             </li>
             <li>
-              <p><b>e-mail:</b> <a href="mailto:samplemail@gmail.com">samplemail@gmail.com</a></p>
+              <b>e-mail:</b> <a href="mailto:samplemail@gmail.com">samplemail@gmail.com</a>
             </li>
           </ul>
-        </section>
+        </div>
+        <button class="close-button" data-close aria-label="Close modal" type="button">
+          <span aria-hidden="true">&times;</span>
+        </button>
       </div>
+
+      <!-- fechar as bolas do meio -->
+      </div>
+    </div>
     </main>
 
     <!-- footer -->

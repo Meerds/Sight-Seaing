@@ -1,5 +1,4 @@
 /* Variables */
-
 $text-color: /*#2e112f*/white;
 
 /* GENERAL STUFF */
@@ -7,7 +6,6 @@ $text-color: /*#2e112f*/white;
 * {
 	margin: 0;
 	padding: 0;
-	font-size: 16px;
 	font-family: 'Montserrat', sans-serif;
 	color: $text-color !important;
 }
@@ -52,32 +50,22 @@ body {
 			margin-bottom: 0;
 			font-size: 3.5rem;
 		}
-
-		/*i.fa-chevron-down {
-			font-size: 2em;
-			color: white;
-			position: absolute;
-			bottom: 20px;
-			left: 50%;
-			transform: translateX(-50%);
-			animation-name: bounce;
-			animation-duration: 3s;
-			animation-iteration-count: infinite;
-			transition: ease-in-out;
-		}*/
 	}
 
 	main {
-		min-height: calc(100vh - 130px - 100px);
+		min-height: calc(100vh - 130px - 200px);
+		position: relative;
 
-		section {
-			max-width: 80%;
-			margin: auto auto 20px;
+		div#main-wrapper {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			width: 100%;
 		}
 
 		div#take-pic {
 			text-align: center;
-			margin-bottom: 30px;
 
 			img#moon {
 				width: 65%;
@@ -86,20 +74,32 @@ body {
 			}
 		}
 
-		div#species-container {
-			div#species-category-wrapper {
-				text-align: center;
+		#bolas-do-meio {
+			max-width: 80%;
+			margin: auto;
+			text-align: center;
 
-				img {
-					width: 30%;
-					height: auto;
-					padding: 3%;
-					transition: padding 0.5s;
+			#about-button,
+			#species-button,
+			#contacts-button {
+				cursor: pointer;
+				width: 30%;
+				max-width: 170px;
+				padding: 2%;
+				transition: padding 0.5s;
 
-					&:hover {
-						padding: 1% !important;
-					}
+				&:hover {
+					padding: 0;
 				}
+			}
+
+			#about-button,
+			#contacts-button {
+				margin-bottom: 10%;
+			}
+
+			#species-button {
+				margin-top: 10%;
 			}
 		}
 	}
@@ -107,7 +107,6 @@ body {
 	footer {
 		height: 200px;
 		background: url("../Images/bg foot mobile.png") no-repeat center bottom;
-		background-size: cover;
 		position: relative;
 
 		div#footer-text {
@@ -127,13 +126,102 @@ body {
 	}
 }
 	
-/* EXTRA */
+/* FOUNDATION */
+
+div.reveal-overlay {
+	background-color: rgba(0, 17, 45, 0.75);
+}
+
+div.reveal {
+	background: none;
+	border: none;
+	position: absolute;
+	top: 50% !important;
+	bottom: initial;
+	left: 50% !important;
+	right: initial;
+	height: initial;
+	min-height: initial;
+	transform: translate(-50%, -50%) !important;
+
+	button.close-button {
+		right: .5rem;
+		top: 0;
+
+		span { /* close button site */
+			font-size: 3rem;
+		}
+	}
+
+	div#about-container {
+		padding: 0 20px;
+	}
+
+	div#species-container {
+		text-align: center;
+
+		img {
+			width: 30%;
+			height: auto;
+			padding: 3%;
+			transition: padding 0.5s;
+
+			&:hover {
+				padding: 1%;
+			}
+		}
+	}
+
+	div#contacts-container {
+		ul {
+			li {
+				text-align: center;
+			}
+		}
+	}
+}
 
 /* QUERIES */
 
 @media screen and (min-width: 640px) {
 	body {
+		header {
+			height: 160px;
+
+			h1 {
+				font-size: 5rem;
+			}
+		}
+
 		main {
+			min-height: calc(100vh - 160px - 200px);
+
+			div#take-pic {
+				text-align: center;
+				padding-top: 10px;
+			}
+
+			#bolas-do-meio {
+				max-width: 80%;
+				margin: -20px auto;
+				text-align: center;
+
+				#about-button,
+				#species-button,
+				#contacts-button {
+					padding: 10px;
+				}
+
+				#about-button,
+				#contacts-button {
+					margin-bottom: 60px;
+				}
+
+				#species-button {
+					margin-top: 60px;
+				}
+			}
+
 			div#species-container {
 				div#species-category-wrapper {
 					text-align: center;
@@ -154,11 +242,21 @@ body {
 
 		footer {
 			background: url("../Images/bg foot tablet.png") no-repeat center bottom;
-			background-size: cover;
 
 			div#footer-text {
 				h3 {
 					font-size: 1.4rem;
+				}
+			}
+		}
+
+		div.reveal {
+			button.close-button {
+				right: .5rem;
+				top: 0;
+
+				span { /* close button site */
+					font-size: 4rem;
 				}
 			}
 		}
@@ -168,15 +266,16 @@ body {
 @media screen and (min-width: 1024px) {
 	body {
 		main {
-			section {
-				max-width: 60%;
-				margin: auto auto 20px;
-			}
 		}
 
 		footer {
 			background: url("../Images/bg foot desktop.png") no-repeat center bottom;
 			background-size: cover;
+		}
+
+		div.reveal {
+			max-width: 80%;
+			width: initial;
 		}
 	}
 }
