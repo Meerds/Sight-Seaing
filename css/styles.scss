@@ -87,6 +87,7 @@ body {
 				max-width: 170px;
 				padding: 2%;
 				transition: padding 0.5s;
+				outline: none;
 
 				&:hover {
 					padding: 0;
@@ -135,6 +136,7 @@ div.reveal-overlay {
 div.reveal {
 	background: none;
 	border: none;
+	outline: none;
 	position: absolute;
 	top: 50% !important;
 	bottom: initial;
