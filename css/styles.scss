@@ -54,7 +54,7 @@ body {
 
 	main {
 		min-height: calc(100vh - 130px - 200px);
-		position: relative;
+		/*position: relative;*/
 
 		div#main-wrapper {
 			position: absolute;
@@ -66,17 +66,34 @@ body {
 
 		div#take-pic {
 			text-align: center;
+			position: relative;
 
-			img#moon {
+			svg#SVG-Circus-40a8a124-36a9-060a-f926-8aa36d5e9c0f,
+			svg#camera {
 				width: 65%;
+				height: 65%;
 				max-width: 300px;
-				max-height: 30vh;
+				/*max-height: 30vh;*/
 				transition: all .5s;
 				cursor: pointer;
+			}
 
-				&:hover {
-					transform: scale(1.1);
-				}
+			svg#camera {
+				width: 54%;
+				height: 54%;
+				position: absolute;
+				top: 49%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+			}
+
+			img {
+				width: 32.5%;
+				height: 32.5%;
+				max-width: 150px;
+				/*max-height: 30vh;*/
+				transition: all .5s;
+				cursor: pointer;
 			}
 		}
 
@@ -206,7 +223,6 @@ div.reveal {
 
 			div#take-pic {
 				text-align: center;
-				padding-top: 10px;
 			}
 
 			#bolas-do-meio {
@@ -247,6 +263,7 @@ div.reveal {
 			div#footer-text {
 				h3 {
 					font-size: 1.4rem;
+					margin-bottom: 0;
 				}
 			}
 		}
