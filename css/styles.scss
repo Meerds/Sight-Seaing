@@ -132,6 +132,7 @@ body {
 		height: 200px;
 		background: url("../Images/bg foot mobile.png") no-repeat center bottom;
 		position: relative;
+		z-index: -9999;
 
 		div#footer-text {
 			position: absolute;
