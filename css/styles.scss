@@ -38,7 +38,8 @@ ol {
 /* PAGE SPECIFIC */
 
 body {
-	background: #f2f4f4 url("../Images/bg sky.png") no-repeat center bottom;
+	background: linear-gradient(to bottom, #40377f, #00b3bc 82%);
+	background: url("../Images/bg sky.png") no-repeat center bottom;
 	background-size: cover;
 
 	header {
