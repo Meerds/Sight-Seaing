@@ -38,9 +38,8 @@ ol {
 /* PAGE SPECIFIC */
 
 body {
-	background: linear-gradient(to bottom, #40377f, #00b3bc 82%);
-	background: url("../Images/bg sky.png") no-repeat center bottom;
-	background-size: cover;
+	background: url("../Images/bg-foot-mobile.png") no-repeat center bottom, url("../Images/bg-sky.png") no-repeat center bottom;
+	background-size: auto, cover;
 
 	header {
 		height: 130px;
@@ -55,15 +54,10 @@ body {
 	}
 
 	main {
-		min-height: calc(100vh - 130px - 200px);
+		min-height: calc(100vh - 130px - 130px);
 		/*position: relative;*/
 
 		div#main-wrapper {
-			position: absolute;
-			top: 50%;
-			left: 50%;
-			transform: translate(-50%, -50%);
-			width: 100%;
 		}
 
 		div#take-pic {
@@ -123,33 +117,28 @@ body {
 
 			#about-button,
 			#contacts-button {
-				margin-bottom: 10%;
+				padding-bottom: 10%;
 			}
 
 			#species-button {
-				margin-top: 10%;
+				padding-top: 10%;
 			}
 		}
 	}
 
 	footer {
-		height: 200px;
-		background: url("../Images/bg foot mobile.png") no-repeat center bottom;
-		position: relative;
-		z-index: -9999;
+		height: 110px;
+		padding-top: 5px;
+		margin-top: 20px;
 
-		div#footer-text {
-			position: absolute;
-			bottom: 5px;
-			left: 50%;
-			transform: translateX(-50%);
-			height: 100px;
-			text-align: center;
+		h3 {
+			font-size: 1.4rem;
+		}
 
-			ul {
-				li {
-					font-size: .75rem;
-				}
+		ul {
+			li {
+				text-align: center;
+				font-size: .75rem;
 			}
 		}
 	}
@@ -235,6 +224,9 @@ div.reveal {
 
 @media screen and (min-width: 640px) {
 	body {
+		background: url("../Images/bg-foot-tablet.png") no-repeat center bottom, url("../Images/bg-sky.png") no-repeat center bottom;
+		background-size: auto, cover;
+
 		header {
 			height: 160px;
 
@@ -245,7 +237,7 @@ div.reveal {
 		}
 
 		main {
-			min-height: calc(100vh - 160px - 200px);
+			min-height: calc(100vh - 160px - 130px);
 
 			div#take-pic {
 				text-align: center;
@@ -253,23 +245,7 @@ div.reveal {
 
 			#bolas-do-meio {
 				max-width: 80%;
-				margin: -20px auto;
 				text-align: center;
-
-				#about-button,
-				#species-button,
-				#contacts-button {
-					padding: 10px;
-				}
-
-				#about-button,
-				#contacts-button {
-					margin-bottom: 60px;
-				}
-
-				#species-button {
-					margin-top: 60px;
-				}
 			}
 
 			div#species-container {
@@ -279,17 +255,6 @@ div.reveal {
 					width: 18%;
 					height: auto;
 					padding: 1%;
-				}
-			}
-		}
-
-		footer {
-			background: url("../Images/bg foot tablet.png") no-repeat center bottom;
-
-			div#footer-text {
-				h3 {
-					font-size: 1.4rem;
-					margin-bottom: 0;
 				}
 			}
 		}
@@ -309,12 +274,13 @@ div.reveal {
 
 @media screen and (min-width: 1024px) {
 	body {
+		background: url("../Images/bg-foot-desktop.png") no-repeat center bottom, url("../Images/bg-sky.png") no-repeat center bottom;
+		background-size: auto, cover;
+
 		main {
 		}
 
 		footer {
-			background: url("../Images/bg foot desktop.png") no-repeat center bottom;
-			background-size: cover;
 		}
 
 		div.reveal {
