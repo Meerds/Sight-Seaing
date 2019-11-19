@@ -246,6 +246,15 @@ div.reveal {
 			#bolas-do-meio {
 				max-width: 80%;
 				text-align: center;
+
+				#about-button,
+				#contacts-button {
+					padding: 10px 10px 60px 10px;
+				}
+
+				#species-button {
+					padding: 60px 10px 10px 10px;
+				}
 			}
 
 			div#species-container {
