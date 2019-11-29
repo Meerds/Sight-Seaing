@@ -14,7 +14,7 @@ $text-color: /*#2e112f*/white;
 }
 
 #mainpage * {
-	color: $text-color !important;
+	color: $text-color;
 }
 
 #common-page * {
@@ -169,7 +169,7 @@ body#mainpage {
 /* FOUNDATION */
 
 div.reveal-overlay {
-	background-color: rgba(0, 17, 45, 0.75);
+	background-color: rgba(255, 255, 255, 0.75);
 }
 
 div.reveal {
@@ -192,6 +192,10 @@ div.reveal {
 		span { /* close button site */
 			font-size: 3rem;
 		}
+	}
+
+	* {
+		color: black !important;
 	}
 
 	div#about-container {
