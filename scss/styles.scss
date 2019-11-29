@@ -1,3 +1,7 @@
+/* Imports */
+@import 'header';
+@import 'footer';
+
 /* Variables */
 $text-color: /*#2e112f*/white;
 
@@ -7,7 +11,14 @@ $text-color: /*#2e112f*/white;
 	margin: 0;
 	padding: 0;
 	font-family: 'Montserrat', sans-serif;
+}
+
+#mainpage * {
 	color: $text-color !important;
+}
+
+#common-page * {
+	color: black !important;
 }
 
 h1, h2, h3 {
@@ -37,7 +48,7 @@ ol {
 
 /* PAGE SPECIFIC */
 
-body {
+body#mainpage {
 	background: url("../Images/bg-foot-mobile.png") no-repeat center bottom, url("../Images/bg-sky.png") no-repeat center bottom;
 	background-size: auto, cover;
 
@@ -49,7 +60,7 @@ body {
 			padding: 30px 0 20px;
 			margin-bottom: 0;
 			font-size: 3.5rem;
-			filter: drop-shadow(0px 0px 2px white);
+			filter: drop-shadow(0px 0px 5px rgba(0, 179, 188, .2));
 		}
 	}
 
@@ -82,7 +93,7 @@ body {
 				top: 49%;
 				left: 50%;
 				transform: translate(-50%, -50%);
-				filter: drop-shadow(0px 0px 5px lightgrey);
+				filter: drop-shadow(0px 0px 5px rgba(0, 179, 188, .2));
 			}
 
 			img {
@@ -109,7 +120,7 @@ body {
 				padding: 2%;
 				transition: all 0.5s;
 				outline: none;
-				filter: drop-shadow(0px 0px 5px white);
+				filter: drop-shadow(0px 0px 5px rgba(0, 179, 188, .2));
 
 				&:hover {
 					transform: scale(1.1);
@@ -118,11 +129,11 @@ body {
 
 			#about-button,
 			#contacts-button {
-				padding-bottom: 10%;
+				margin-bottom: 10%;
 			}
 
 			#species-button {
-				padding-top: 10%;
+				margin-top: 10%;
 			}
 		}
 	}
@@ -224,7 +235,7 @@ div.reveal {
 /* QUERIES */
 
 @media screen and (min-width: 640px) {
-	body {
+	body#mainpage {
 		background: url("../Images/bg-foot-tablet.png") no-repeat center bottom, url("../Images/bg-sky.png") no-repeat center bottom;
 		background-size: auto, cover;
 
@@ -250,11 +261,13 @@ div.reveal {
 
 				#about-button,
 				#contacts-button {
-					padding: 10px 10px 60px 10px;
+					padding: 10px;
+					margin-bottom: 50px;
 				}
 
 				#species-button {
-					padding: 60px 10px 10px 10px;
+					padding: 10px;
+					margin-top: 50px;
 				}
 			}
 
@@ -278,12 +291,16 @@ div.reveal {
 					font-size: 4rem;
 				}
 			}
+
+			&#species {
+				max-width: 70%;
+			}
 		}
 	}
 }
 
 @media screen and (min-width: 1024px) {
-	body {
+	body#mainpage {
 		background: url("../Images/bg-foot-desktop.png") no-repeat center bottom, url("../Images/bg-sky.png") no-repeat center bottom;
 		background-size: auto, cover;
 
