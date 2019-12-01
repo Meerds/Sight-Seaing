@@ -21,9 +21,15 @@ $text-color: /*#2e112f*/white;
 	color: black !important;
 }
 
+@font-face {
+	font-family: 'Lobster-1.4';
+	src: url(../fonts/Lobster-1.4.otf);
+}
+
 h1, h2, h3 {
 	font-family: 'Comic Sans', cursive;
 	font-family: 'Lobster', cursive;
+	font-family: 'Lobster-1.4';
 	/*font-family: 'Rancho', cursive;*/
 	text-align: center;
 }
