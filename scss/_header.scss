@@ -1,0 +1,18 @@
+body#common-page {
+	header {
+		height: 50px;
+		background: darkblue;
+
+		* {
+			color: white !important;
+			font-family: 'Comic Sans', cursive;
+			font-family: 'Lobster-1.4';
+			font-family: 'Lobster', cursive;
+		}
+
+		a {
+			font-size: 2rem;
+    		padding-left: 10px;
+		}
+	}
+}

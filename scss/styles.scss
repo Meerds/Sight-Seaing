@@ -1,6 +1,7 @@
 /* Imports */
 @import 'header';
 @import 'footer';
+@import 'species';
 
 /* Variables */
 $text-color: /*#2e112f*/white;
@@ -18,7 +19,7 @@ $text-color: /*#2e112f*/white;
 }
 
 #common-page * {
-	color: black !important;
+	color: black;
 }
 
 @font-face {
@@ -140,23 +141,6 @@ body#mainpage {
 
 			#species-button {
 				margin-top: 10%;
-			}
-		}
-	}
-
-	footer {
-		height: 110px;
-		padding-top: 5px;
-		margin-top: 20px;
-
-		h3 {
-			font-size: 1.4rem;
-		}
-
-		ul {
-			li {
-				text-align: center;
-				font-size: .75rem;
 			}
 		}
 	}
@@ -315,9 +299,6 @@ div.reveal {
 		background-size: auto, cover;
 
 		main {
-		}
-
-		footer {
 		}
 
 		div.reveal {
