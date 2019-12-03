@@ -4,7 +4,8 @@
 @import 'species';
 
 /* Variables */
-$text-color: /*#2e112f*/white;
+$white: /*#2e112f*/white;
+$black: #333333;
 
 /* GENERAL STUFF */
 
@@ -15,11 +16,11 @@ $text-color: /*#2e112f*/white;
 }
 
 #mainpage * {
-	color: $text-color;
+	color: $white;
 }
 
 #common-page * {
-	color: black;
+	color: $black;
 }
 
 @font-face {
@@ -185,7 +186,7 @@ div.reveal {
 	}
 
 	* {
-		color: black !important;
+		color: $black !important;
 	}
 
 	div#about-container {

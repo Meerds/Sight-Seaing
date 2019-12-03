@@ -3,12 +3,12 @@ body#common-page {
 	background-size: auto;
 
 	main {
-		min-height: calc(100vh - 50px - 200px);
+		min-height: calc(100vh - 60px - 200px);
 		max-width: 1024px;
 		margin: auto;
 
 		div#tiles-wrapper {
-			min-height: calc(100vh - 50px - 200px);
+			min-height: calc(100vh - 60px - 200px);
 			display: flex;
 			flex-wrap: wrap;
 			justify-content: space-evenly;
@@ -20,6 +20,7 @@ body#common-page {
 				margin: 10px;
 				padding: 0 20px;
 				filter: drop-shadow(0px 0px 5px rgba(0, 179, 188, .2));
+				align-items: center;
 
 				h1.species-name {
 					font-size: 1.5rem;
@@ -43,28 +44,21 @@ body#common-page {
 		div.species-statistics {
 			position: relative;
 
-			div.statistics-text {
-				position: absolute;
-				top: 50%;
-				left: 50%;
-				transform: translate(-50%, -50%);
+			h2.avistamentos {
+				margin: 0;
+				font-size: 1rem;
+				font-family: 'Montserrat', sans-serif;
+			}
 
-				h2.avistamentos {
-					margin: 0;
-					font-size: 1rem;
-					font-family: 'Montserrat', sans-serif;
-				}
-
-				p {
-					font-family: 'Comic Sans', cursive;
-					font-family: 'Lobster-1.4';
-					font-family: 'Lobster', cursive;
-					/*font-family: 'Rancho', cursive;*/
-					text-align: center;
-					font-size: 4rem;
-					line-height: 80px;
-					vertical-align: middle;
-				}
+			p {
+				font-family: 'Comic Sans', cursive;
+				font-family: 'Lobster-1.4';
+				font-family: 'Lobster', cursive;
+				/*font-family: 'Rancho', cursive;*/
+				text-align: center;
+				font-size: 4rem;
+				line-height: 80px;
+				vertical-align: middle;
 			}
 		}
 
