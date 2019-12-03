@@ -8,9 +8,11 @@ body#common-page {
 		margin: auto;
 
 		div#tiles-wrapper {
+			min-height: calc(100vh - 50px - 200px);
 			display: flex;
 			flex-wrap: wrap;
 			justify-content: space-evenly;
+		    align-content: space-evenly;
 
 			div.species-wrapper {
 				border-radius: 10px;
