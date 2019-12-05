@@ -1,8 +1,17 @@
 body#common-page {
-	header {
+	header#common-page-header {
 		height: 50px;
 		background: darkblue;
 		margin-bottom: 10px;
+
+		&.fixed-header {
+			width: 100%;
+			position: fixed;
+			top: 0;
+			z-index: 999;
+			animation-name: reveal-header;
+			animation-duration: 1s;
+		}
 
 		* {
 			color: white !important;
@@ -16,4 +25,10 @@ body#common-page {
     		padding-left: 10px;
 		}
 	}
+}
+
+@keyframes reveal-header {
+	0%, 50% {top: -50px;}
+	100% {top: 0;}
+
 }
