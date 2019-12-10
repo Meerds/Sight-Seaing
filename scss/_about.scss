@@ -1,14 +1,15 @@
 body#common-page {
 	main {
-		h1 {
-			font-size: 2rem;
-			text-align: left;
-		}
 
 		section#project-info {
 			max-width: 600px;
 			margin: auto;
 			padding: 0 20px;
+
+			h1 {
+				font-size: 2rem;
+				text-align: left;
+			}
 
 			p {
 				padding-bottom: 10px;
@@ -19,16 +20,11 @@ body#common-page {
 
 @media screen and (min-width: 640px) {
 	body#common-page {
-		background: url("../Images/bg-foot-tablet.png") no-repeat center bottom;
-		background-size: auto;
 	}
 }
 
 @media screen and (min-width: 1024px) {
 	body#common-page {
-		background: url("../Images/bg-foot-desktop.png") no-repeat center bottom;
-		background-size: auto;
-
 		main {
 			section#project-info {
 				margin: initial;

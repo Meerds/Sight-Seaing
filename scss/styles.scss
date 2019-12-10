@@ -1,4 +1,5 @@
 /* Imports */
+@import 'backgrounds';
 @import 'header';
 @import 'footer';
 @import 'species';
@@ -7,6 +8,7 @@
 /* Variables */
 $white: /*#2e112f*/white;
 $black: #333333;
+$scale-hover: all 0.5s;
 
 /* GENERAL STUFF */
 
@@ -65,9 +67,6 @@ body#common-page {
 }
 
 body#mainpage {
-	background: url("../Images/bg-foot-mobile.png") no-repeat center bottom, url("../Images/bg-sky.png") no-repeat center bottom;
-	background-size: auto, cover;
-
 	header {
 		height: 130px;
 
@@ -101,7 +100,7 @@ body#mainpage {
 				height: 65%;
 				max-width: 300px;
 				/*max-height: 30vh;*/
-				transition: all .5s;
+				transition: $scale-hover;
 				cursor: pointer;
 			}
 
@@ -120,7 +119,7 @@ body#mainpage {
 				height: 32.5%;
 				max-width: 150px;
 				/*max-height: 30vh;*/
-				transition: all .5s;
+				transition: $scale-hover;
 				cursor: pointer;
 			}
 		}
@@ -137,7 +136,7 @@ body#mainpage {
 				width: 30%;
 				max-width: 170px;
 				padding: 2%;
-				transition: all 0.5s;
+				transition: $scale-hover;
 				outline: none;
 				filter: drop-shadow(0px 0px 5px rgba(0, 179, 188, .2));
 
@@ -228,8 +227,22 @@ div.reveal {
 			}
 		}
 
-		p#about-info {
+		p {
 			text-align: center;
+
+			a {
+				font-weight: bold;
+				display: inline-block;
+				padding: 10px 20px;
+				background: $black;
+				color: $white !important;
+				border-radius: 50px;
+				transition: $scale-hover;
+
+				&:hover {
+					transform: scale(1.05);
+				}
+			}
 		}
 	}
 
@@ -240,7 +253,7 @@ div.reveal {
 			width: 30%;
 			height: auto;
 			padding: 3%;
-			transition: all 0.5s;
+			transition: $scale-hover;
 
 			&:hover {
 				transform: scale(1.1);
@@ -271,9 +284,6 @@ div.reveal {
 
 @media screen and (min-width: 640px) {
 	body#mainpage {
-		background: url("../Images/bg-foot-tablet.png") no-repeat center bottom, url("../Images/bg-sky.png") no-repeat center bottom;
-		background-size: auto, cover;
-
 		header {
 			height: 160px;
 
@@ -334,9 +344,6 @@ div.reveal {
 
 @media screen and (min-width: 1024px) {
 	body#mainpage {
-		background: url("../Images/bg-foot-desktop.png") no-repeat center bottom, url("../Images/bg-sky.png") no-repeat center bottom;
-		background-size: auto, cover;
-
 		header {
 			h1 {
 				font-size: 12vmin;

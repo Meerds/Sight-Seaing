@@ -1,0 +1,45 @@
+/* MOBILE */
+
+body {
+	&#mainpage {
+		background: url("../Images/bg-foot-mobile.svg") no-repeat center bottom, url("../Images/bg-sky.svg") no-repeat center bottom;
+		background-size: 750px, cover;
+	}
+
+	&#common-page {
+		background: url("../Images/bg-foot-mobile.svg") no-repeat center bottom;
+		background-size: 750px;
+	}
+}
+
+/* TABLET */
+
+@media screen and (min-width: 640px) {
+	body {
+		&#mainpage {
+			background: url("../Images/bg-foot-tablet.svg") no-repeat center bottom, url("../Images/bg-sky.svg") no-repeat center bottom;
+			background-size: 1024px, cover;
+		}
+
+		&#common-page {
+			background: url("../Images/bg-foot-tablet.svg") no-repeat center bottom;
+			background-size: 1024px;
+		}
+	}
+}
+
+/* DESKTOP */
+
+@media screen and (min-width: 1024px) {
+	body {
+		&#mainpage {
+			background: url("../Images/bg-foot-desktop.svg") no-repeat center bottom, url("../Images/bg-sky.svg") no-repeat center bottom;
+			background-size: 1920px, cover;
+		}
+
+		&#common-page {
+			background: url("../Images/bg-foot-desktop.svg") no-repeat center bottom;
+			background-size: 1920px;
+		}
+	}
+}

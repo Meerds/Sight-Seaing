@@ -1,7 +1,4 @@
 body#common-page {
-	background: url("../Images/bg-foot-mobile.png") no-repeat center bottom;
-	background-size: auto;
-
 	main {
 		div#tiles-wrapper {
 			min-height: calc(100vh - 60px - 200px);
@@ -79,14 +76,10 @@ body#common-page {
 
 @media screen and (min-width: 640px) {
 	body#common-page {
-		background: url("../Images/bg-foot-tablet.png") no-repeat center bottom;
-		background-size: auto;
 	}
 }
 
 @media screen and (min-width: 1024px) {
 	body#common-page {
-		background: url("../Images/bg-foot-desktop.png") no-repeat center bottom;
-		background-size: auto;
 	}
 }
