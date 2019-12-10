@@ -197,12 +197,31 @@ div.reveal {
 	}
 
 	div#about-container {
-		padding: 0 40px;
 		text-align: center;
+
+		h1 {
+			margin-bottom: 50px;
+		}
 
 		ol {
 			text-align: left;
 			display: inline-block;
+			margin-bottom: 50px;
+
+			li {
+				font-weight: bold;
+				font-size: 1.25rem;
+			}
+
+			i {
+				width: calc(100% - 1.25rem);
+				font-size: 2rem;
+				text-align: center;
+			}
+		}
+
+		p#about-info {
+			text-align: center;
 		}
 	}
 
@@ -277,16 +296,6 @@ div.reveal {
 					margin-top: 50px;
 				}
 			}
-
-			div#species-container {
-				text-align: center;
-
-				img {
-					width: 18%;
-					height: auto;
-					padding: 1%;
-				}
-			}
 		}
 
 		div.reveal {
@@ -302,6 +311,10 @@ div.reveal {
 				span { /* close button site */
 					font-size: 4rem;
 				}
+			}
+
+			li {
+				font-size: 1.25rem;
 			}
 
 			&#species {
@@ -326,7 +339,6 @@ div.reveal {
 			&#about,
 			&#contacts {
 				max-width: 80%;
-				width: initial;
 			}
 		}
 	}
