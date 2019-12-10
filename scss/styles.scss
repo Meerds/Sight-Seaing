@@ -2,6 +2,7 @@
 @import 'header';
 @import 'footer';
 @import 'species';
+@import 'about';
 
 /* Variables */
 $white: /*#2e112f*/white;
@@ -55,6 +56,13 @@ ol {
 }
 
 /* PAGE SPECIFIC */
+body#common-page {
+	main {
+		min-height: calc(100vh - 60px - 200px);
+		max-width: 1024px;
+		margin: auto;
+	}
+}
 
 body#mainpage {
 	background: url("../Images/bg-foot-mobile.png") no-repeat center bottom, url("../Images/bg-sky.png") no-repeat center bottom;
