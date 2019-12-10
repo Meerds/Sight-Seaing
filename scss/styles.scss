@@ -67,17 +67,20 @@ body#mainpage {
 			color: white;
 			padding: 30px 0 20px;
 			margin-bottom: 0;
-			font-size: 3.5rem;
+			font-size: 15vmin;
 			filter: drop-shadow(0px 0px 5px rgba(0, 179, 188, .2));
 		}
 	}
 
 	main {
 		min-height: calc(100vh - 130px - 130px);
+		display: flex;
+		align-items: center;
 		/*position: relative;*/
 
 		div#main-wrapper {
-			padding-top: 2%;
+			margin: auto;
+			width: 100%;
 		}
 
 		div#take-pic {
@@ -176,11 +179,15 @@ div.reveal {
 	min-height: initial;
 	transform: translate(-50%, -50%) !important;
 
+	h1 {
+		font-size: 2rem;
+	}
+
 	button.close-button {
 		right: .5rem;
 		top: 0;
 
-		span { /* close button site */
+		span { /* close button size */
 			font-size: 3rem;
 		}
 	}
@@ -190,11 +197,12 @@ div.reveal {
 	}
 
 	div#about-container {
-		padding: 0 20px;
+		padding: 0 40px;
+		text-align: center;
 
 		ol {
-			margin: auto;
-			max-width: 200px;
+			text-align: left;
+			display: inline-block;
 		}
 	}
 
@@ -243,8 +251,7 @@ div.reveal {
 			height: 160px;
 
 			h1 {
-				font-size: 5rem;
-				padding-top: 3%;
+				font-size: 12vmax;
 			}
 		}
 
@@ -283,6 +290,11 @@ div.reveal {
 		}
 
 		div.reveal {
+
+			h1 {
+				font-size: 3rem;
+			}
+
 			button.close-button {
 				right: .5rem;
 				top: 0;
@@ -304,7 +316,10 @@ div.reveal {
 		background: url("../Images/bg-foot-desktop.png") no-repeat center bottom, url("../Images/bg-sky.png") no-repeat center bottom;
 		background-size: auto, cover;
 
-		main {
+		header {
+			h1 {
+				font-size: 12vmin;
+			}
 		}
 
 		div.reveal {
