@@ -1,7 +1,15 @@
 body#common-page {
 	main {
-
-		section#project-info {
+		div#info-wrapper {
+			min-height: calc(100vh - 60px - 200px);
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-evenly;
+			align-content: space-evenly;
+			width: 100%;
+		}
+		
+		section {
 			max-width: 600px;
 			margin: auto;
 			padding: 0 20px;
@@ -20,16 +28,15 @@ body#common-page {
 
 @media screen and (min-width: 640px) {
 	body#common-page {
+		main {
+			section {
+				max-width: 80%;
+			}
+		}
 	}
 }
 
 @media screen and (min-width: 1024px) {
 	body#common-page {
-		main {
-			section#project-info {
-				margin: initial;
-				margin-right: auto;
-			}
-		}
 	}
 }
