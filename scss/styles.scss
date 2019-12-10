@@ -191,6 +191,11 @@ div.reveal {
 
 	div#about-container {
 		padding: 0 20px;
+
+		ol {
+			margin: auto;
+			max-width: 200px;
+		}
 	}
 
 	div#species-container {
