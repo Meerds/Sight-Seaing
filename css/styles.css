@@ -194,8 +194,21 @@ body#common-page main section h1 {
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/merda\/OneDrive\/Ambiente\%20de\%20Trabalho\/Design\%20de\%20Meios\%20Interativos\/Sight-Seaing\/scss\/_about\.scss}line{font-family:\0000322}}
 body#common-page main section p {
   padding-bottom: 10px;
+  font-size: .8rem;
 }
 
+@media screen and (min-width: 640px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/merda\/OneDrive\/Ambiente\%20de\%20Trabalho\/Design\%20de\%20Meios\%20Interativos\/Sight-Seaing\/scss\/_about\.scss}line{font-family:\0000334}}
+  body#common-page main section p {
+    font-size: .9rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/merda\/OneDrive\/Ambiente\%20de\%20Trabalho\/Design\%20de\%20Meios\%20Interativos\/Sight-Seaing\/scss\/_about\.scss}line{font-family:\0000346}}
+  body#common-page main section p {
+    font-size: 1rem;
+  }
+}
 /* Variables */
 /* GENERAL STUFF */
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/merda\/OneDrive\/Ambiente\%20de\%20Trabalho\/Design\%20de\%20Meios\%20Interativos\/Sight-Seaing\/scss\/styles\.scss}line{font-family:\0000315}}
