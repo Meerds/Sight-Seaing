@@ -4,6 +4,7 @@ body#common-page {
 			min-height: calc(100vh - 60px - 200px);
 			display: flex;
 			flex-wrap: wrap;
+			flex-direction: column;
 			justify-content: space-evenly;
 			align-content: space-evenly;
 			width: 100%;

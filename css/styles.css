@@ -76,25 +76,26 @@ body#common-page header#common-page-header a {
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/merda\/OneDrive\/Ambiente\%20de\%20Trabalho\/Design\%20de\%20Meios\%20Interativos\/Sight-Seaing\/scss\/_footer\.scss}line{font-family:\000031}}
 footer {
   height: 110px;
-  padding-top: 5px;
+  padding-top: 10px;
   margin-top: 20px;
+  filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.7));
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/merda\/OneDrive\/Ambiente\%20de\%20Trabalho\/Design\%20de\%20Meios\%20Interativos\/Sight-Seaing\/scss\/_footer\.scss}line{font-family:\000036}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/merda\/OneDrive\/Ambiente\%20de\%20Trabalho\/Design\%20de\%20Meios\%20Interativos\/Sight-Seaing\/scss\/_footer\.scss}line{font-family:\000037}}
 footer h3 {
   font-size: 1.4rem;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/merda\/OneDrive\/Ambiente\%20de\%20Trabalho\/Design\%20de\%20Meios\%20Interativos\/Sight-Seaing\/scss\/_footer\.scss}line{font-family:\0000311}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/merda\/OneDrive\/Ambiente\%20de\%20Trabalho\/Design\%20de\%20Meios\%20Interativos\/Sight-Seaing\/scss\/_footer\.scss}line{font-family:\0000312}}
 footer ul li {
   text-align: center;
   font-size: .75rem;
   color: white !important;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/merda\/OneDrive\/Ambiente\%20de\%20Trabalho\/Design\%20de\%20Meios\%20Interativos\/Sight-Seaing\/scss\/_footer\.scss}line{font-family:\0000320}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/merda\/OneDrive\/Ambiente\%20de\%20Trabalho\/Design\%20de\%20Meios\%20Interativos\/Sight-Seaing\/scss\/_footer\.scss}line{font-family:\0000321}}
 body#common-page footer {
   margin-top: 90px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/merda\/OneDrive\/Ambiente\%20de\%20Trabalho\/Design\%20de\%20Meios\%20Interativos\/Sight-Seaing\/scss\/_footer\.scss}line{font-family:\0000323}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/merda\/OneDrive\/Ambiente\%20de\%20Trabalho\/Design\%20de\%20Meios\%20Interativos\/Sight-Seaing\/scss\/_footer\.scss}line{font-family:\0000324}}
 body#common-page footer * {
   color: white !important;
 }
@@ -176,35 +177,36 @@ body#common-page main div#info-wrapper {
   min-height: calc(100vh - 60px - 200px);
   display: flex;
   flex-wrap: wrap;
+  flex-direction: column;
   justify-content: space-evenly;
   align-content: space-evenly;
   width: 100%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/merda\/OneDrive\/Ambiente\%20de\%20Trabalho\/Design\%20de\%20Meios\%20Interativos\/Sight-Seaing\/scss\/_about\.scss}line{font-family:\0000312}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/merda\/OneDrive\/Ambiente\%20de\%20Trabalho\/Design\%20de\%20Meios\%20Interativos\/Sight-Seaing\/scss\/_about\.scss}line{font-family:\0000313}}
 body#common-page main section {
   max-width: 600px;
   margin: auto;
   padding: 0 20px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/merda\/OneDrive\/Ambiente\%20de\%20Trabalho\/Design\%20de\%20Meios\%20Interativos\/Sight-Seaing\/scss\/_about\.scss}line{font-family:\0000317}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/merda\/OneDrive\/Ambiente\%20de\%20Trabalho\/Design\%20de\%20Meios\%20Interativos\/Sight-Seaing\/scss\/_about\.scss}line{font-family:\0000318}}
 body#common-page main section h1 {
   font-size: 2rem;
   text-align: left;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/merda\/OneDrive\/Ambiente\%20de\%20Trabalho\/Design\%20de\%20Meios\%20Interativos\/Sight-Seaing\/scss\/_about\.scss}line{font-family:\0000322}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/merda\/OneDrive\/Ambiente\%20de\%20Trabalho\/Design\%20de\%20Meios\%20Interativos\/Sight-Seaing\/scss\/_about\.scss}line{font-family:\0000323}}
 body#common-page main section p {
   padding-bottom: 10px;
   font-size: .8rem;
 }
 
 @media screen and (min-width: 640px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/merda\/OneDrive\/Ambiente\%20de\%20Trabalho\/Design\%20de\%20Meios\%20Interativos\/Sight-Seaing\/scss\/_about\.scss}line{font-family:\0000334}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/merda\/OneDrive\/Ambiente\%20de\%20Trabalho\/Design\%20de\%20Meios\%20Interativos\/Sight-Seaing\/scss\/_about\.scss}line{font-family:\0000335}}
   body#common-page main section p {
     font-size: .9rem;
   }
 }
 @media screen and (min-width: 1024px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/merda\/OneDrive\/Ambiente\%20de\%20Trabalho\/Design\%20de\%20Meios\%20Interativos\/Sight-Seaing\/scss\/_about\.scss}line{font-family:\0000346}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/merda\/OneDrive\/Ambiente\%20de\%20Trabalho\/Design\%20de\%20Meios\%20Interativos\/Sight-Seaing\/scss\/_about\.scss}line{font-family:\0000347}}
   body#common-page main section p {
     font-size: 1rem;
   }
@@ -267,7 +269,7 @@ ol {
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/merda\/OneDrive\/Ambiente\%20de\%20Trabalho\/Design\%20de\%20Meios\%20Interativos\/Sight-Seaing\/scss\/styles\.scss}line{font-family:\0000362}}
 body#common-page main {
   min-height: calc(100vh - 60px - 200px);
-  max-width: 1024px;
+  max-width: 1300px;
   margin: auto;
   display: flex;
 }
