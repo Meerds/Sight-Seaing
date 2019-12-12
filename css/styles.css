@@ -143,7 +143,7 @@ body#common-page main div#tiles-wrapper div.species-wrapper div.animal-ball img 
   object-fit: cover;
   height: 110px;
   width: 110px;
-  border-radius: 10%;
+  border-radius: 50%;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/merda\/OneDrive\/Ambiente\%20de\%20Trabalho\/Design\%20de\%20Meios\%20Interativos\/Sight-Seaing\/scss\/_species\.scss}line{font-family:\0000348}}
 body#common-page main div.species-statistics {
@@ -458,7 +458,7 @@ div.reveal div#species-container {
 div.reveal div#species-container img {
   width: 30%;
   height: auto;
-  padding: 2%;
+  padding: 2.5%;
   transition: all 0.5s;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/merda\/OneDrive\/Ambiente\%20de\%20Trabalho\/Design\%20de\%20Meios\%20Interativos\/Sight-Seaing\/scss\/styles\.scss}line{font-family:\00003264}}
