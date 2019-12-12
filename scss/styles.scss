@@ -9,6 +9,8 @@
 $white: /*#2e112f*/white;
 $black: #333333;
 $scale-hover: all 0.5s;
+$black-drop-shadow: drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.5));
+$blue-drop-shadow: drop-shadow(0px 0px 5px rgba(0, 179, 188, .2));
 
 /* GENERAL STUFF */
 
@@ -76,7 +78,7 @@ body#mainpage {
 			padding: 30px 0 20px;
 			margin-bottom: 0;
 			font-size: 15vmin;
-			filter: drop-shadow(0px 0px 5px rgba(0, 179, 188, .2));
+			filter: $blue-drop-shadow;
 		}
 	}
 
@@ -112,7 +114,7 @@ body#mainpage {
 				top: 49%;
 				left: 50%;
 				transform: translate(-50%, -50%);
-				filter: drop-shadow(0px 0px 5px rgba(0, 179, 188, .2));
+				filter: $blue-drop-shadow;
 			}
 
 			img {
@@ -139,7 +141,7 @@ body#mainpage {
 				padding: 2%;
 				transition: $scale-hover;
 				outline: none;
-				filter: drop-shadow(0px 0px 5px rgba(0, 179, 188, .2));
+				filter: $blue-drop-shadow;
 
 				&:hover {
 					transform: scale(1.1);
@@ -171,7 +173,8 @@ body#mainpage {
 /* FOUNDATION */
 
 div.reveal-overlay {
-	background-color: rgba(255, 255, 255, 0.75);
+	/*background-color: rgba(255, 255, 255, 0.75);*/
+	background-color: rgba(10, 10, 10, 0.6);
 }
 
 div.reveal {
@@ -201,20 +204,23 @@ div.reveal {
 	}
 
 	* {
-		color: $black !important;
+		color: $white !important;
 	}
 
 	div#about-container {
 		text-align: center;
+		filter: $black-drop-shadow;
 
 		h1 {
 			margin-bottom: 50px;
 		}
 
-		ol {
-			text-align: left;
-			display: inline-block;
+		ul {
+			display: flex;
 			margin-bottom: 50px;
+			flex-direction: column;
+			align-items: center;
+			justify-content: space-evenly;
 
 			li {
 				font-weight: bold;
@@ -222,9 +228,7 @@ div.reveal {
 			}
 
 			i {
-				width: calc(100% - 1.25rem);
 				font-size: 2rem;
-				text-align: center;
 			}
 		}
 
@@ -249,11 +253,12 @@ div.reveal {
 
 	div#species-container {
 		text-align: center;
+		filter: $black-drop-shadow;
 
 		img {
 			width: 30%;
 			height: auto;
-			padding: 3%;
+			padding: 2%;
 			transition: $scale-hover;
 
 			&:hover {
@@ -263,6 +268,8 @@ div.reveal {
 	}
 
 	div#contacts-container {
+		filter: $black-drop-shadow;
+
 		ul {
 			li {
 				text-align: center;
@@ -352,9 +359,14 @@ div.reveal {
 		}
 
 		div.reveal {
-			&#about,
-			&#contacts {
-				max-width: 80%;
+			&#about {
+				width: 800px;
+			}
+
+			div#about-container {
+				ul {
+					flex-direction: row;
+				}
 			}
 		}
 	}

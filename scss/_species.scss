@@ -4,7 +4,7 @@ body#common-page {
 			min-height: calc(100vh - 60px - 200px);
 			display: flex;
 			flex-wrap: wrap;
-			justify-content: space-evenly;
+			justify-content: center;
 		    align-content: space-evenly;
 		    width: 100%;
 
@@ -39,7 +39,7 @@ body#common-page {
 						object-fit: cover;
 						height: 110px;
 						width: 110px;
-						border-radius: 50%;
+						border-radius: 10%;
 					}
 				}
 			}
