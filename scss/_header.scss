@@ -30,6 +30,11 @@ body#common-page {
 			font-size: 2rem;
 			color: $white;
     		padding: 9px 10px;
+    		transition: $scale-hover;
+
+    		&:hover {
+    			transform: scale(1.1);
+    		}
 		}
 
 		h1 {
@@ -42,6 +47,11 @@ body#common-page {
 			height: 50px;
 			width: 60px;
 			padding: 10px;
+			transition: $scale-hover;
+
+			&:hover {
+				transform: scale(1.1);
+			}
 		}
 	}
 }

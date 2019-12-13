@@ -71,18 +71,28 @@ body#common-page header#common-page-header i {
   font-size: 2rem;
   color: white;
   padding: 9px 10px;
+  transition: all 0.5s;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/merda\/OneDrive\/Ambiente\%20de\%20Trabalho\/Design\%20de\%20Meios\%20Interativos\/Sight-Seaing\/scss\/_header\.scss}line{font-family:\0000335}}
+body#common-page header#common-page-header i:hover {
+  transform: scale(1.1);
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/merda\/OneDrive\/Ambiente\%20de\%20Trabalho\/Design\%20de\%20Meios\%20Interativos\/Sight-Seaing\/scss\/_header\.scss}line{font-family:\0000340}}
 body#common-page header#common-page-header h1 {
   display: inline-block;
   font-size: 1.5rem;
   margin: auto;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/merda\/OneDrive\/Ambiente\%20de\%20Trabalho\/Design\%20de\%20Meios\%20Interativos\/Sight-Seaing\/scss\/_header\.scss}line{font-family:\0000341}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/merda\/OneDrive\/Ambiente\%20de\%20Trabalho\/Design\%20de\%20Meios\%20Interativos\/Sight-Seaing\/scss\/_header\.scss}line{font-family:\0000346}}
 body#common-page header#common-page-header img {
   height: 50px;
   width: 60px;
   padding: 10px;
+  transition: all 0.5s;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/merda\/OneDrive\/Ambiente\%20de\%20Trabalho\/Design\%20de\%20Meios\%20Interativos\/Sight-Seaing\/scss\/_header\.scss}line{font-family:\0000352}}
+body#common-page header#common-page-header img:hover {
+  transform: scale(1.1);
 }
 
 @keyframes reveal-header {
@@ -94,7 +104,7 @@ body#common-page header#common-page-header img {
   }
 }
 @media screen and (min-width: 640px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/merda\/OneDrive\/Ambiente\%20de\%20Trabalho\/Design\%20de\%20Meios\%20Interativos\/Sight-Seaing\/scss\/_header\.scss}line{font-family:\0000359}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/merda\/OneDrive\/Ambiente\%20de\%20Trabalho\/Design\%20de\%20Meios\%20Interativos\/Sight-Seaing\/scss\/_header\.scss}line{font-family:\0000369}}
   body#common-page header#common-page-header h1 {
     font-size: 2rem;
   }
