@@ -8,7 +8,7 @@ body#mainpage {
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/merda\/OneDrive\/Ambiente\%20de\%20Trabalho\/Design\%20de\%20Meios\%20Interativos\/Sight-Seaing\/scss\/_backgrounds\.scss}line{font-family:\000039}}
 body#common-page {
-  background: url("../Images/bg-foot-mobile.svg") no-repeat center bottom;
+  background: #f1f1f1 url("../Images/bg-foot-mobile.svg") no-repeat center bottom;
   background-size: 750px;
 }
 
@@ -21,7 +21,7 @@ body#common-page {
   }
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/merda\/OneDrive\/Ambiente\%20de\%20Trabalho\/Design\%20de\%20Meios\%20Interativos\/Sight-Seaing\/scss\/_backgrounds\.scss}line{font-family:\0000324}}
   body#common-page {
-    background: url("../Images/bg-foot-tablet.svg") no-repeat center bottom;
+    background: #f1f1f1 url("../Images/bg-foot-tablet.svg") no-repeat center bottom;
     background-size: 1024px;
   }
 }
@@ -34,7 +34,7 @@ body#common-page {
   }
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/merda\/OneDrive\/Ambiente\%20de\%20Trabalho\/Design\%20de\%20Meios\%20Interativos\/Sight-Seaing\/scss\/_backgrounds\.scss}line{font-family:\0000340}}
   body#common-page {
-    background: url("../Images/bg-foot-desktop.svg") no-repeat center bottom;
+    background: #f1f1f1 url("../Images/bg-foot-desktop.svg") no-repeat center bottom;
     background-size: 1920px;
   }
 }
@@ -142,7 +142,7 @@ body#common-page main div#tiles-wrapper {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  align-content: space-evenly;
+  align-content: center;
   width: 100%;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/merda\/OneDrive\/Ambiente\%20de\%20Trabalho\/Design\%20de\%20Meios\%20Interativos\/Sight-Seaing\/scss\/_species\.scss}line{font-family:\0000311}}
@@ -154,44 +154,46 @@ body#common-page main div#tiles-wrapper div.species-wrapper {
   border-radius: 10px;
   width: 300px;
   margin: 10px;
-  padding: 20px;
+  padding: 10px 20px;
   align-items: center;
+  background: white;
+  border-radius: 10px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/merda\/OneDrive\/Ambiente\%20de\%20Trabalho\/Design\%20de\%20Meios\%20Interativos\/Sight-Seaing\/scss\/_species\.scss}line{font-family:\0000322}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/merda\/OneDrive\/Ambiente\%20de\%20Trabalho\/Design\%20de\%20Meios\%20Interativos\/Sight-Seaing\/scss\/_species\.scss}line{font-family:\0000324}}
 body#common-page main div#tiles-wrapper div.species-wrapper h1.species-name {
   font-size: 1.1rem;
   font-family: 'Montserrat', sans-serif;
   font-weight: bold;
   margin: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/merda\/OneDrive\/Ambiente\%20de\%20Trabalho\/Design\%20de\%20Meios\%20Interativos\/Sight-Seaing\/scss\/_species\.scss}line{font-family:\0000329}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/merda\/OneDrive\/Ambiente\%20de\%20Trabalho\/Design\%20de\%20Meios\%20Interativos\/Sight-Seaing\/scss\/_species\.scss}line{font-family:\0000331}}
 body#common-page main div#tiles-wrapper div.species-wrapper p.latin-name {
   font-size: 1rem;
   font-family: 'Montserrat', sans-serif;
   text-align: center;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/merda\/OneDrive\/Ambiente\%20de\%20Trabalho\/Design\%20de\%20Meios\%20Interativos\/Sight-Seaing\/scss\/_species\.scss}line{font-family:\0000335}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/merda\/OneDrive\/Ambiente\%20de\%20Trabalho\/Design\%20de\%20Meios\%20Interativos\/Sight-Seaing\/scss\/_species\.scss}line{font-family:\0000337}}
 body#common-page main div#tiles-wrapper div.species-wrapper div.animal-ball {
   padding: 10px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/merda\/OneDrive\/Ambiente\%20de\%20Trabalho\/Design\%20de\%20Meios\%20Interativos\/Sight-Seaing\/scss\/_species\.scss}line{font-family:\0000338}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/merda\/OneDrive\/Ambiente\%20de\%20Trabalho\/Design\%20de\%20Meios\%20Interativos\/Sight-Seaing\/scss\/_species\.scss}line{font-family:\0000340}}
 body#common-page main div#tiles-wrapper div.species-wrapper div.animal-ball img {
   object-fit: cover;
   height: 110px;
   width: 110px;
   border-radius: 50%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/merda\/OneDrive\/Ambiente\%20de\%20Trabalho\/Design\%20de\%20Meios\%20Interativos\/Sight-Seaing\/scss\/_species\.scss}line{font-family:\0000348}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/merda\/OneDrive\/Ambiente\%20de\%20Trabalho\/Design\%20de\%20Meios\%20Interativos\/Sight-Seaing\/scss\/_species\.scss}line{font-family:\0000350}}
 body#common-page main div.species-statistics {
   position: relative;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/merda\/OneDrive\/Ambiente\%20de\%20Trabalho\/Design\%20de\%20Meios\%20Interativos\/Sight-Seaing\/scss\/_species\.scss}line{font-family:\0000351}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/merda\/OneDrive\/Ambiente\%20de\%20Trabalho\/Design\%20de\%20Meios\%20Interativos\/Sight-Seaing\/scss\/_species\.scss}line{font-family:\0000353}}
 body#common-page main div.species-statistics h2.avistamentos {
   margin: 0;
   font-size: 1rem;
   font-family: 'Montserrat', sans-serif;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/merda\/OneDrive\/Ambiente\%20de\%20Trabalho\/Design\%20de\%20Meios\%20Interativos\/Sight-Seaing\/scss\/_species\.scss}line{font-family:\0000357}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/merda\/OneDrive\/Ambiente\%20de\%20Trabalho\/Design\%20de\%20Meios\%20Interativos\/Sight-Seaing\/scss\/_species\.scss}line{font-family:\0000359}}
 body#common-page main div.species-statistics p {
   font-family: 'Comic Sans', cursive;
   font-family: 'Lobster-1.4';
@@ -202,7 +204,7 @@ body#common-page main div.species-statistics p {
   line-height: 80px;
   vertical-align: middle;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/merda\/OneDrive\/Ambiente\%20de\%20Trabalho\/Design\%20de\%20Meios\%20Interativos\/Sight-Seaing\/scss\/_species\.scss}line{font-family:\0000369}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/merda\/OneDrive\/Ambiente\%20de\%20Trabalho\/Design\%20de\%20Meios\%20Interativos\/Sight-Seaing\/scss\/_species\.scss}line{font-family:\0000371}}
 body#common-page main p.species-info {
   margin-top: 10px;
   font-size: .9rem;

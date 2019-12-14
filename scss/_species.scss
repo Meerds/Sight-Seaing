@@ -5,7 +5,7 @@ body#common-page {
 			display: flex;
 			flex-wrap: wrap;
 			justify-content: center;
-		    align-content: space-evenly;
+		    align-content: center;
 		    width: 100%;
 
 		    &.fixed-tiles {
@@ -16,8 +16,10 @@ body#common-page {
 				border-radius: 10px;
 				width: 300px;
 				margin: 10px;
-				padding: 20px;
+				padding: 10px 20px;
 				align-items: center;
+				background: $white;
+				border-radius: 10px;
 
 				h1.species-name {
 					font-size: 1.1rem;
