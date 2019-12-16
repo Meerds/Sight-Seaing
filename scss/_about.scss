@@ -6,13 +6,13 @@ body#common-page {
 			flex-wrap: wrap;
 			flex-direction: column;
 			justify-content: center;
-			align-content: space-evenly;
+			align-content: center;
 			width: 100%;
 		}
 		
 		section {
 			max-width: 600px;
-			margin: auto;
+			margin: 20px auto;
 			padding: 0 20px;
 
 			h1 {
