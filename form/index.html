@@ -24,15 +24,15 @@
 
     <!-- main -->
     <main id="main-form">
-      <div id="form-wrapper">
-       <label>
+      <div id="form-wrapper" class="grid-x">
+       <label class="cell small-12 large-6">
        	Tipo de avistamento
        	<select>
        		<option value="normal">Normal</option>
        		<option value="misto">Misto</option>
        	</select>
         </label>
-        <label>
+        <label class="cell small-12 large-6">
        	Grau de certeza
        	<select>
           <option value="null">--</option>
@@ -41,7 +41,7 @@
        		<option value="certeza">Certeza</option>
        	</select>
         </label>
-        <label>
+        <label class="cell small-12 large-6">
        	Comportamento
        	<select>
           <option value="null">--</option>
@@ -52,7 +52,7 @@
        		<option value="outro">Outro</option>
        	</select>
         </label>
-        <label>
+        <label class="cell small-12 large-6">
        	Reação à embarcação
        	<select>
           <option value="null">--</option>
@@ -62,7 +62,7 @@
        		<option value="outro">Outro</option>
        	</select>
         </label>
-        <label>
+        <label class="cell small-12 large-6">
        	Estado do mar
         <p>0 sendo pouco e 4 sendo muito torbulento</p>
        	<select>
@@ -75,7 +75,7 @@
        	</select>
         </label>
         </label>
-        <label>
+        <label id="label-visibility" class="cell small-12 large-6">
        	Visibilidade
        	<select>
           <option value="null">--</option>
@@ -85,7 +85,7 @@
        		<option value="muito-boa">Muito Boa (>5mn)</option>
        	</select>
         </label>
-        <label>
+        <label class="cell small-12 large-6">
         Cobertura de nuvens
         <p>0 sendo pouco e 10 sendo muito coberto</p>
        	<select>
@@ -103,7 +103,7 @@
        		<option value="10">10</option>
        	</select>
         </label>
-        <label>
+        <label id="label-glare" class="cell small-12 large-6">
        	Reflexo do sol
        	<select>
           <option value="null">--</option>
@@ -113,7 +113,7 @@
        		<option value="forte">Forte</option>
        	</select>
         </label>
-        <label>
+        <label class="cell small-12 large-6">
        	Direção do vento
        	<select>
           <option value="null">--</option>
@@ -127,7 +127,7 @@
        		<option value="noroeste">Noroeste</option>
        	</select>
         </label>
-        <label id="observations">
+        <label id="observations" class="cell small-12 large-6">
        	Observações
        	<textarea placeholder="Informações importantes não específicadas nas perguntas anteriores"></textarea>
         </label>
