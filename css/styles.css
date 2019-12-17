@@ -278,17 +278,23 @@ body#common-page main#main-form div#form-wrapper label p {
 body#common-page main#main-form div#form-wrapper label#observations textarea {
   height: 100px;
 }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/merda\/OneDrive\/Ambiente\%20de\%20Trabalho\/Design\%20de\%20Meios\%20Interativos\/Sight-Seaing\/scss\/_form\.scss}line{font-family:\0000328}}
+body#common-page main#main-form div#form-wrapper label select,
+body#common-page main#main-form div#form-wrapper label textarea {
+  border-color: #2E5B90;
+  border-radius: 5px;
+}
 
 @media screen and (min-width: 1024px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/merda\/OneDrive\/Ambiente\%20de\%20Trabalho\/Design\%20de\%20Meios\%20Interativos\/Sight-Seaing\/scss\/_form\.scss}line{font-family:\0000339}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/merda\/OneDrive\/Ambiente\%20de\%20Trabalho\/Design\%20de\%20Meios\%20Interativos\/Sight-Seaing\/scss\/_form\.scss}line{font-family:\0000345}}
   body#common-page main#main-form {
-    max-width: 1024px;
+    max-width: 1000px;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/merda\/OneDrive\/Ambiente\%20de\%20Trabalho\/Design\%20de\%20Meios\%20Interativos\/Sight-Seaing\/scss\/_form\.scss}line{font-family:\0000342}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/merda\/OneDrive\/Ambiente\%20de\%20Trabalho\/Design\%20de\%20Meios\%20Interativos\/Sight-Seaing\/scss\/_form\.scss}line{font-family:\0000348}}
   body#common-page main#main-form div#form-wrapper {
     flex-direction: row;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/merda\/OneDrive\/Ambiente\%20de\%20Trabalho\/Design\%20de\%20Meios\%20Interativos\/Sight-Seaing\/scss\/_form\.scss}line{font-family:\0000346}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/merda\/OneDrive\/Ambiente\%20de\%20Trabalho\/Design\%20de\%20Meios\%20Interativos\/Sight-Seaing\/scss\/_form\.scss}line{font-family:\0000352}}
   body#common-page main#main-form div#form-wrapper label#label-visibility, body#common-page main#main-form div#form-wrapper label#label-glare {
     margin-top: 20px;
   }

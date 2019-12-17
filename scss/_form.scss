@@ -24,6 +24,12 @@ body#common-page {
 						height: 100px;
 					}
 				}
+
+				select,
+				textarea {
+					border-color: #2E5B90;
+					border-radius: 5px;
+				}
 			}
 		}
 	}
@@ -37,7 +43,7 @@ body#common-page {
 @media screen and (min-width: 1024px) {
 	body#common-page {
 		main#main-form {
-			max-width: 1024px;
+			max-width: 1000px;
 
 			div#form-wrapper {
 				flex-direction: row;
