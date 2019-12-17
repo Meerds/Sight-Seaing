@@ -1,0 +1,37 @@
+body#common-page {
+	main#main-form {
+		display: block;
+		max-width: 600px;
+
+		div#form-wrapper {
+			min-height: calc(100vh - 60px - 200px);
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-content: center;
+			margin: 20px 10px;
+
+			label {
+				p {
+					font-size: .8rem;
+					color: grey;
+				}
+				&#observations {
+					textarea {
+						height: 100px;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media screen and (min-width: 640px) {
+	body#common-page {
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	body#common-page {
+	}
+}
