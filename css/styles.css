@@ -1,4 +1,19 @@
 /* Variables */
+/*@mixin bounceIn {
+	opacity: 0;
+	animation-name: bounceIn;
+  	animation-duration: .25s;
+  	animation-timing-function: ease-in-out;
+  	animation-fill-mode: forwards;
+}
+
+@mixin bounceInCamera {
+	opacity: 0;
+	animation-name: bounceInCamera;
+  	animation-duration: 450ms;
+  	animation-timing-function: linear;
+  	animation-fill-mode: forwards;
+}*/
 /* Imports */
 /* MOBILE */
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/merda\/OneDrive\/Ambiente\%20de\%20Trabalho\/Design\%20de\%20Meios\%20Interativos\/Sight-Seaing\/scss\/_backgrounds\.scss}line{font-family:\000034}}
@@ -598,23 +613,23 @@ div.reveal div#contacts-container ul li {
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/merda\/OneDrive\/Ambiente\%20de\%20Trabalho\/Design\%20de\%20Meios\%20Interativos\/Sight-Seaing\/scss\/styles\.scss}line{font-family:\00003338}}
 body#mainpage header h1 {
-  animation: .5s .1s ease-in-out both fadeIn;
+  animation: .5s .1s ease-in backwards fadeIn;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/merda\/OneDrive\/Ambiente\%20de\%20Trabalho\/Design\%20de\%20Meios\%20Interativos\/Sight-Seaing\/scss\/styles\.scss}line{font-family:\00003343}}
 body#mainpage main div#take-pic {
-  animation: .5s .25s ease-in-out both bounceIn;
+  animation: .5s .25s ease-in backwards fadeIn;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/merda\/OneDrive\/Ambiente\%20de\%20Trabalho\/Design\%20de\%20Meios\%20Interativos\/Sight-Seaing\/scss\/styles\.scss}line{font-family:\00003348}}
 body#mainpage main #bolas-do-meio #about-button {
-  animation: .5s .5s ease-in-out both bounceIn;
+  animation: .5s .5s ease-in backwards bounceIn;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/merda\/OneDrive\/Ambiente\%20de\%20Trabalho\/Design\%20de\%20Meios\%20Interativos\/Sight-Seaing\/scss\/styles\.scss}line{font-family:\00003352}}
 body#mainpage main #bolas-do-meio #species-button {
-  animation: .5s .65s ease-in-out both bounceIn;
+  animation: .5s .65s ease-in backwards bounceIn;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/merda\/OneDrive\/Ambiente\%20de\%20Trabalho\/Design\%20de\%20Meios\%20Interativos\/Sight-Seaing\/scss\/styles\.scss}line{font-family:\00003356}}
 body#mainpage main #bolas-do-meio #contacts-button {
-  animation: .5s .8s ease-in-out both bounceIn;
+  animation: .5s .8s ease-in backwards bounceIn;
 }
 
 /* QUERIES */

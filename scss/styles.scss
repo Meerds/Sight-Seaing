@@ -5,7 +5,7 @@ $scale-hover: all 0.5s;
 $black-drop-shadow: drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.5));
 $blue-drop-shadow: drop-shadow(0px 0px 5px rgba(0, 179, 188, .2));
 
-@mixin bounceIn {
+/*@mixin bounceIn {
 	opacity: 0;
 	animation-name: bounceIn;
   	animation-duration: .25s;
@@ -19,7 +19,7 @@ $blue-drop-shadow: drop-shadow(0px 0px 5px rgba(0, 179, 188, .2));
   	animation-duration: 450ms;
   	animation-timing-function: linear;
   	animation-fill-mode: forwards;
-}
+}*/
 
 /* Imports */
 @import 'backgrounds';
@@ -336,25 +336,25 @@ div.reveal {
 body#mainpage {
 	header {
 		h1 {
-			animation: .5s .1s ease-in-out both fadeIn;
+			animation: .5s .1s ease-in backwards fadeIn;
 		}
 	}
 	main {
 		div#take-pic {
-			animation: .5s .25s ease-in-out both bounceIn;
+			animation: .5s .25s ease-in backwards fadeIn;
 		}
 
 		#bolas-do-meio {
 			#about-button {
-				animation: .5s .5s ease-in-out both bounceIn;
+				animation: .5s .5s ease-in backwards bounceIn;
 			}
 
 			#species-button {
-				animation: .5s .65s ease-in-out both bounceIn;
+				animation: .5s .65s ease-in backwards bounceIn;
 			}
 
 			#contacts-button {
-				animation: .5s .8s ease-in-out both bounceIn;
+				animation: .5s .8s ease-in backwards bounceIn;
 			}
 		}
 	}
