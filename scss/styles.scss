@@ -323,28 +323,38 @@ div.reveal {
   }
 }
 
+@keyframes fadeIn{
+  0%{
+    opacity: 0;
+  }
+
+  100%{
+    opacity: 1;
+  }
+}
+
 body#mainpage {
 	header {
 		h1 {
-			animation: .5s .1s ease-in-out bounceIn;
+			animation: .5s .1s ease-in-out both fadeIn;
 		}
 	}
 	main {
 		div#take-pic {
-			animation: .5s .25s ease-in-out bounceIn;
+			animation: .5s .25s ease-in-out both bounceIn;
 		}
 
 		#bolas-do-meio {
 			#about-button {
-				animation: .5s .5s ease-in-out bounceIn;
+				animation: .5s .5s ease-in-out both bounceIn;
 			}
 
 			#species-button {
-				animation: .5s .65s ease-in-out bounceIn;
+				animation: .5s .65s ease-in-out both bounceIn;
 			}
 
 			#contacts-button {
-				animation: .5s .8s ease-in-out bounceIn;
+				animation: .5s .8s ease-in-out both bounceIn;
 			}
 		}
 	}
