@@ -5,22 +5,6 @@ $scale-hover: all 0.5s;
 $black-drop-shadow: drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.5));
 $blue-drop-shadow: drop-shadow(0px 0px 5px rgba(0, 179, 188, .2));
 
-/*@mixin bounceIn {
-	opacity: 0;
-	animation-name: bounceIn;
-  	animation-duration: .25s;
-  	animation-timing-function: ease-in-out;
-  	animation-fill-mode: forwards;
-}
-
-@mixin bounceInCamera {
-	opacity: 0;
-	animation-name: bounceInCamera;
-  	animation-duration: 450ms;
-  	animation-timing-function: linear;
-  	animation-fill-mode: forwards;
-}*/
-
 /* Imports */
 @import 'backgrounds';
 @import 'header';
@@ -28,6 +12,7 @@ $blue-drop-shadow: drop-shadow(0px 0px 5px rgba(0, 179, 188, .2));
 @import 'species';
 @import 'about';
 @import 'form';
+@import 'agradecimento';
 
 /* GENERAL STUFF */
 

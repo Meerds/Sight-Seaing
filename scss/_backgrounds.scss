@@ -2,6 +2,7 @@
 
 body {
 	&#mainpage {
+		background: url("../Images/bg-foot-mobile.svg") no-repeat center bottom, linear-gradient(to bottom, #53a2c6, #c7eafb 83%);
 		background: url("../Images/bg-foot-mobile.svg") no-repeat center bottom, url("../Images/bg-sky.svg") no-repeat center bottom;
 		background-size: 750px, cover;
 	}
@@ -17,6 +18,7 @@ body {
 @media screen and (min-width: 640px) {
 	body {
 		&#mainpage {
+			background: url("../Images/bg-foot-tablet.svg") no-repeat center bottom, linear-gradient(to bottom, #53a2c6, #c7eafb 83%);
 			background: url("../Images/bg-foot-tablet.svg") no-repeat center bottom, url("../Images/bg-sky.svg") no-repeat center bottom;
 			background-size: 1024px, cover;
 		}
@@ -33,6 +35,7 @@ body {
 @media screen and (min-width: 1024px) {
 	body {
 		&#mainpage {
+			background: url("../Images/bg-foot-desktop.svg") no-repeat center bottom, linear-gradient(to bottom, #53a2c6, #c7eafb 83%);
 			background: url("../Images/bg-foot-desktop.svg") no-repeat center bottom, url("../Images/bg-sky.svg") no-repeat center bottom;
 			background-size: 1920px, cover;
 		}

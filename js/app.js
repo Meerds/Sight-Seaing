@@ -15,4 +15,12 @@ jQuery(document).ready(function($) {
             $("#tiles-wrapper").removeClass("fixed-tiles");
         }
     });
+
+    $('#submit').click(function() {
+        setTimeout(function () { location.href='../index.html'; }, 2500);
+        $(this).unbind();
+
+        $("#form-wrapper").addClass("hide");
+        $("#obrigado").addClass("visible");
+    });
 });

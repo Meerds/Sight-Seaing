@@ -9,7 +9,8 @@ body#common-page {
     		flex-direction: column;
     		justify-content: center;
     		align-content: center;
-    		margin: 20px 10px;
+    		margin: 0 10px;
+    		padding-top: 20px;
 
 			label {
 				padding: 10px;
@@ -51,6 +52,18 @@ body#common-page {
 					color: $white;
 					transition: $scale-hover;
 				}
+			}
+		}
+
+		div#obrigado {
+			display: none;
+			animation: .5s .1s ease-in backwards fadeIn;
+
+			&.visible {
+				min-height: calc(100vh - 60px - 200px);
+    			display: flex;
+    			justify-content: center;
+    			align-items: center;
 			}
 		}
 	}
