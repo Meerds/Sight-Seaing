@@ -17,7 +17,7 @@ jQuery(document).ready(function($) {
     });
 
     $('#submit').click(function() {
-        setTimeout(function () { location.href='../../Sight-Seaing/index.html'; }, 2500);
+        setTimeout(function () { location.href='../index.html'; }, 2500);
         $(this).unbind();
 
         $("#form-wrapper").addClass("hide");
