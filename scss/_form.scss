@@ -31,6 +31,28 @@ body#common-page {
 					border-radius: 5px;
 				}
 			}
+
+			div.button {
+				background: #2e112f;
+				width: 150px;
+				border-radius: 10px;
+				border: 2px solid #00B3BC;
+				margin: auto;
+				padding: 2px;
+				transition: $scale-hover;
+
+				&:hover {
+					transform: scale(1.1);
+				}
+
+				p#submit {
+					text-align: center;
+					font-size: 1.5em;
+					font-weight: bold;
+					color: $white;
+					transition: $scale-hover;
+				}
+			}
 		}
 	}
 }

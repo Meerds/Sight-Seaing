@@ -40,7 +40,7 @@ body#common-page {
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/merda\/OneDrive\/Ambiente\%20de\%20Trabalho\/Design\%20de\%20Meios\%20Interativos\/Sight-Seaing\/scss\/_header\.scss}line{font-family:\000032}}
 body#common-page header#common-page-header {
-  background: url(../Images/Headers-2.svg) no-repeat center center;
+  background: linear-gradient(to bottom, #07a2b4, #403880);
   background-size: cover;
   height: 50px;
   margin-bottom: 10px;
@@ -287,17 +287,39 @@ body#common-page main#main-form div#form-wrapper label textarea {
   border-color: #2E5B90;
   border-radius: 5px;
 }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/merda\/OneDrive\/Ambiente\%20de\%20Trabalho\/Design\%20de\%20Meios\%20Interativos\/Sight-Seaing\/scss\/_form\.scss}line{font-family:\0000335}}
+body#common-page main#main-form div#form-wrapper div.button {
+  background: #2e112f;
+  width: 150px;
+  border-radius: 10px;
+  border: 2px solid #00B3BC;
+  margin: auto;
+  padding: 2px;
+  transition: all 0.5s;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/merda\/OneDrive\/Ambiente\%20de\%20Trabalho\/Design\%20de\%20Meios\%20Interativos\/Sight-Seaing\/scss\/_form\.scss}line{font-family:\0000344}}
+body#common-page main#main-form div#form-wrapper div.button:hover {
+  transform: scale(1.1);
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/merda\/OneDrive\/Ambiente\%20de\%20Trabalho\/Design\%20de\%20Meios\%20Interativos\/Sight-Seaing\/scss\/_form\.scss}line{font-family:\0000348}}
+body#common-page main#main-form div#form-wrapper div.button p#submit {
+  text-align: center;
+  font-size: 1.5em;
+  font-weight: bold;
+  color: white;
+  transition: all 0.5s;
+}
 
 @media screen and (min-width: 1024px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/merda\/OneDrive\/Ambiente\%20de\%20Trabalho\/Design\%20de\%20Meios\%20Interativos\/Sight-Seaing\/scss\/_form\.scss}line{font-family:\0000345}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/merda\/OneDrive\/Ambiente\%20de\%20Trabalho\/Design\%20de\%20Meios\%20Interativos\/Sight-Seaing\/scss\/_form\.scss}line{font-family:\0000367}}
   body#common-page main#main-form {
     max-width: 1000px;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/merda\/OneDrive\/Ambiente\%20de\%20Trabalho\/Design\%20de\%20Meios\%20Interativos\/Sight-Seaing\/scss\/_form\.scss}line{font-family:\0000348}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/merda\/OneDrive\/Ambiente\%20de\%20Trabalho\/Design\%20de\%20Meios\%20Interativos\/Sight-Seaing\/scss\/_form\.scss}line{font-family:\0000370}}
   body#common-page main#main-form div#form-wrapper {
     flex-direction: row;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/merda\/OneDrive\/Ambiente\%20de\%20Trabalho\/Design\%20de\%20Meios\%20Interativos\/Sight-Seaing\/scss\/_form\.scss}line{font-family:\0000352}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/merda\/OneDrive\/Ambiente\%20de\%20Trabalho\/Design\%20de\%20Meios\%20Interativos\/Sight-Seaing\/scss\/_form\.scss}line{font-family:\0000374}}
   body#common-page main#main-form div#form-wrapper label#label-visibility, body#common-page main#main-form div#form-wrapper label#label-glare {
     margin-top: 20px;
   }
