@@ -5,6 +5,22 @@ $scale-hover: all 0.5s;
 $black-drop-shadow: drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.5));
 $blue-drop-shadow: drop-shadow(0px 0px 5px rgba(0, 179, 188, .2));
 
+@mixin bounceIn {
+	opacity: 0;
+	animation-name: bounceIn;
+  	animation-duration: .25s;
+  	animation-timing-function: ease-in-out;
+  	animation-fill-mode: forwards;
+}
+
+@mixin bounceInCamera {
+	opacity: 0;
+	animation-name: bounceInCamera;
+  	animation-duration: 450ms;
+  	animation-timing-function: linear;
+  	animation-fill-mode: forwards;
+}
+
 /* Imports */
 @import 'backgrounds';
 @import 'header';
@@ -117,15 +133,6 @@ body#mainpage {
 				transform: translate(-50%, -50%);
 				filter: $blue-drop-shadow;
 			}
-
-			img {
-				width: 32.5%;
-				height: 32.5%;
-				max-width: 150px;
-				/*max-height: 30vh;*/
-				transition: $scale-hover;
-				cursor: pointer;
-			}
 		}
 
 		#bolas-do-meio {
@@ -160,6 +167,11 @@ body#mainpage {
 		}
 	}
 }
+
+
+
+
+
 
 
 
@@ -278,6 +290,71 @@ div.reveal {
 		}
 	}
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ANIMATION */
+
+@keyframes bounceIn{
+  0%{
+    opacity: 0;
+    transform: scale(0.9);
+  }
+
+  100%{
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+body#mainpage {
+	header {
+		h1 {
+			animation: .5s .1s ease-in-out bounceIn;
+		}
+	}
+	main {
+		div#take-pic {
+			animation: .5s .25s ease-in-out bounceIn;
+		}
+
+		#bolas-do-meio {
+			#about-button {
+				animation: .5s .5s ease-in-out bounceIn;
+			}
+
+			#species-button {
+				animation: .5s .65s ease-in-out bounceIn;
+			}
+
+			#contacts-button {
+				animation: .5s .8s ease-in-out bounceIn;
+			}
+		}
+	}
+}
+
+
+
+
+
+
 
 
 
