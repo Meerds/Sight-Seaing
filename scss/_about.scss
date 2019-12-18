@@ -15,6 +15,14 @@ body#common-page {
 			margin: 0 auto;
 			padding: 0 20px;
 
+			&:first-child {
+				margin-bottom: 10px;
+			}
+
+			&:last-child {
+				margin-top: 10px;
+			}
+
 			h1 {
 				font-size: 2rem;
 				text-align: left;
