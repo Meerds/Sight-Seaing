@@ -57,7 +57,7 @@ body#common-page {
 
 		div#obrigado {
 			display: none;
-			animation: .5s .1s ease-in backwards fadeIn;
+			animation: 5s .1s ease-in both fadeInOut;
 
 			&.visible {
 				min-height: calc(100vh - 60px - 200px);
@@ -68,6 +68,34 @@ body#common-page {
 		}
 	}
 }
+
+
+
+
+
+@keyframes fadeInOut{
+  0% {
+    opacity: 0;
+  }
+
+  10% {
+    opacity: 1;
+  }
+
+  90% {
+  	opacity: 1;
+  }
+
+  100% {
+  	opacity: 0;
+  }
+}
+
+
+
+
+
+
 
 @media screen and (min-width: 640px) {
 	body#common-page {
